@@ -118,7 +118,7 @@ function NosProjets() {
                 }}
               >
                 <Image
-                  src="/images/home/solution.png"
+                  src="/images/home/nosprojet.png"
                   alt="Nexus Projects Graphic"
                   width={600}
                   height={600}
