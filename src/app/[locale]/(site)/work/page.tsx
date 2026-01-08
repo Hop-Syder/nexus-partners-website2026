@@ -4,7 +4,7 @@
  * @description Page Portfolio (Work) regroupant les réalisations de Nexus Partners.
  * @created 2026-01-07
  * @updated 2026-01-07
- * 🌐 ceo.nexuspartners.xyz
+ * 🌐 ceo.nexus-partners.xyz
 */
 import { Metadata } from "next";
 import NosProjets from "@/app/components/home/online-presence";

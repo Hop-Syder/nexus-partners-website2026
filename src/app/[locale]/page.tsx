@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import Achievements from "../components/achievements";
 import Brand from "../components/home/brand";
 import CreativeMind from "../components/home/creative-mind";
@@ -9,9 +8,6 @@ import NosProjets from "../components/home/online-presence";
 import Solutions from "../components/home/solution";
 import WebResult from "../components/home/web-result";
 
-export const metadata: Metadata = {
-  title: "Nexus Partners",
-};
 
 
 export default function Home() {

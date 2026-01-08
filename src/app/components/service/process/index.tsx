@@ -4,7 +4,7 @@
  * @description Timeline horizontale du processus en 4 étapes.
  * @created 2026-01-03
  * @updated 2026-01-03
- * 🌐 ceo.nexuspartners.xyz
+ * 🌐 ceo.nexus-partners.xyz
  */
 'use client'
 import React from 'react'

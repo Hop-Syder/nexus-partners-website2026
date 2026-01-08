@@ -18,7 +18,7 @@ export default function Page() {
                         <div className="bg-white dark:bg-dark_black p-8 rounded-2xl">
                             <p className="text-opacity-60">
                                 This Privacy Statement explains how Personal Information about our (potential) customers and other individuals using our services is collected, used and disclosed by Nexus Partners and its respective affiliates ("us", "we", "our" or "Nexus Partners"). This Privacy Statement describes our privacy practices in relation to the use of our websites (including any customer portal or interactive customer website) (
-                                <Link href="https://nexuspartners.xyz/" className="text-dark_black">https://nexuspartners.xyz/</Link>), our software (Nexus Partners), services, solutions, tools, and related applications, services, and programs, including research and marketing activities, offered by us (the "Services"), as well as your choices regarding use, access, storage and correction of Personal Information. It also describes how we collect, use, disclose and otherwise process Personal Information collected in relation to our Services and otherwise in the course of our business activities.</p>
+                                <Link href="https://nexus-partners.xyz/" className="text-dark_black">https://nexus-partners.xyz/</Link>), our software (Nexus Partners), services, solutions, tools, and related applications, services, and programs, including research and marketing activities, offered by us (the "Services"), as well as your choices regarding use, access, storage and correction of Personal Information. It also describes how we collect, use, disclose and otherwise process Personal Information collected in relation to our Services and otherwise in the course of our business activities.</p>
 
                             <p className="text-opacity-60">By signing up to our Services and by agreeing to our General Terms and Conditions required to use certain of our Services, you agree to the collection, usage, storage and disclosure of information described in this Privacy Statement.</p>
 
@@ -34,7 +34,7 @@ export default function Page() {
 
                                 <p className="mt-6 text-opacity-60">
                                     We will not collect financial information from you (such as your payment card number, expiration date or security code). All payments to us are handled via a third party, Nexus Partners
-                                    <Link href="https://nexuspartners.xyz/" className="text-dark_black">(https://nexuspartners.xyz/)</Link>. We refer to their Privacy Statement <Link href="https://nexuspartners.xyz/" className="text-dark_black">(https://nexuspartners.xyz/)</Link>.
+                                    <Link href="https://nexus-partners.xyz/" className="text-dark_black">(https://nexus-partners.xyz/)</Link>. We refer to their Privacy Statement <Link href="https://nexus-partners.xyz/" className="text-dark_black">(https://nexus-partners.xyz/)</Link>.
                                 </p>
 
                             </div>
@@ -45,7 +45,7 @@ export default function Page() {
                                 </p>
                                 <p className="mt-6 text-opacity-60">
                                     We will not collect financial information from you (such as your payment card number, expiration date or security code). All payments to us are handled via Nexus Partners{" "}
-                                    <Link href="https://nexuspartners.xyz/" className="text-dark_black">(https://nexuspartners.xyz)</Link>. We refer to their Privacy Statement <Link href="https://nexuspartners.xyz/" className="text-dark_black">https://nexuspartners.xyz/</Link>.
+                                    <Link href="https://nexus-partners.xyz/" className="text-dark_black">(https://nexus-partners.xyz)</Link>. We refer to their Privacy Statement <Link href="https://nexus-partners.xyz/" className="text-dark_black">https://nexus-partners.xyz/</Link>.
                                 </p>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
  * @description CTA final avec formulaire de contact et boutons d'action.
  * @created 2026-01-03
  * @updated 2026-01-03
- * 🌐 ceo.nexuspartners.xyz
+ * 🌐 ceo.nexus-partners.xyz
  */
 'use client'
 import React, { useState } from 'react'

@@ -57,7 +57,7 @@ const footerData = {
     },
     contactDetails: {
         address: "Cotonou, Bénin",
-        email: "contact@nexuspartners.xyz",
+        email: "contact@nexus-partners.xyz",
         phone: "+229 01 96 70 17 33"
     }
 };

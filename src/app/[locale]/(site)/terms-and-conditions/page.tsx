@@ -86,7 +86,7 @@ export default function Page() {
                                     <li>
                                         <p>
                                             <span className="font-semibold">2.1 Services</span>{" "}
-                                            Nexus Partners hereby grants Customer a non-exclusive, non-transferable license during the Term (as defined in Section 12) to: (a) use the Services and to download and install desktop or mobile applications as applicable on the number and type of Authorized Devices solely for Customer’s internal business purposes in accordance with the Documentation, and/or (b) use our SaaS product, hosted systems, design software, tools, and build websites under the nexuspartners.xyz domain.. The Services are delivered electronically.
+                                            Nexus Partners hereby grants Customer a non-exclusive, non-transferable license during the Term (as defined in Section 12) to: (a) use the Services and to download and install desktop or mobile applications as applicable on the number and type of Authorized Devices solely for Customer’s internal business purposes in accordance with the Documentation, and/or (b) use our SaaS product, hosted systems, design software, tools, and build websites under the nexus-partners.xyz domain.. The Services are delivered electronically.
                                         </p>
                                     </li>
                                     <li className="mt-5">

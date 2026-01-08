@@ -4,7 +4,7 @@
  * @description Section Pourquoi Nous avec design Bento Grid asymétrique premium.
  * @created 2026-01-03
  * @updated 2026-01-04
- * 🌐 ceo.nexuspartners.xyz
+ * 🌐 ceo.nexus-partners.xyz
  */
 'use client'
 import React, { useRef } from 'react'

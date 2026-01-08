@@ -23,7 +23,7 @@ export async function middleware(request: NextRequest) {
 export const config = {
   // Match only internationalized pathnames + auth pages
   // Match all pathnames except for
-  // - … if they contain a dot (e.g. `favicon.ico`)
+  // - … if they contain a dot (e.g. `logo.png`)
   // - api routes
   // - _next (internal paths)
   // - _vercel (internal paths)
