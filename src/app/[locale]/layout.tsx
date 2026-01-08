@@ -8,6 +8,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
 import type { Metadata } from 'next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: {
@@ -79,6 +80,19 @@ export default async function Layout({
           </Providers>
         </NextIntlClientProvider>
         <SpeedInsights />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SXG1HDV56J"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SXG1HDV56J');
+          `}
+        </Script>
       </body>
     </html>
   )
