@@ -1,0 +1,469 @@
+{
+  "─── PAGE ACCUEIL ───": "",
+
+  "Hero": {
+    "_comment": "Section Accueil",
+    "title1": "Des solutions digitales pensées pour vendre,",
+    "title2": "pas pour impressionner",
+    "description": "Nexus Partners accompagne les entreprises locales avec des sites web vendeurs ou vitrines, des applications personnalisées, du SEO local et des automatisations WhatsApp qui génèrent des clients réels, mois après mois.",
+    "cta": "Comment ça marche"
+  },
+  "Layout": {
+    "header": {
+      "cta": "Démarrer un projet",
+      "menu": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "work": "Projets",
+        "contact": "Contact"
+      }
+    },
+    "footer": {
+      "description": "Donner aux entreprises locales le pouvoir de croître grâce à des solutions digitales simples, efficaces et orientées résultats.",
+      "rights": "© Tous droits réservés par Nexus Partners",
+      "links": " Liens utiles",
+      "pages": " Pages légales",
+      "contact": " Contact",
+      "socials": " Réseaux sociaux",
+      "legal": {
+        "terms": "Conditions Générales",
+        "privacy": "Politique de Confidentialité",
+        "notices": "Mentions légales",
+        "docs": "Documentation"
+      }
+    }
+  },
+  "Brand": {
+    "title": "Ils nous font confiance pour leur stratégie digitale"
+  },
+  "Innovation": {
+    "_comment": "Section Services & Innovation",
+    "title1": "Nos Services pour transformer ",
+    "title2": "votre activité",
+    "services": {
+      "brand_strategy": "Stratégie de\nMarque",
+      "digital_marketing": "Marketing\nDigital",
+      "uiux_design": "Design\nUI/UX",
+      "analytics_reporting": "Analyses &\nRapports",
+      "web_development": "Développement\nWeb",
+      "seo_local": "SEO Local",
+      "whatsapp_automation": "Automatisation WhatsApp"
+    },
+    "cta_banner": {
+      "title": "Vos clients vous cherchent. Êtes-vous prêts à les trouver ? \n Découvrez comment Nexus Partners peut vous mettre devant eux !",
+      "collaborate": "Collaborons",
+      "portfolio": "Voir le Portfolio"
+    }
+  },
+  "NosProjets": {
+    "_comment": "Section Nos Projets",
+    "title1": "Nos projets ",
+    "title2": "Web & solutions digitales",
+    "title3": "qui boostent vos ventes",
+    "tags": {
+      "projet-1": "Cabinet Art de Vivre",
+      "tag-projet-1": "Site vitrine",
+      "projet-2": "Empreinte finale",
+      "tag-projet-2": "Site vitrine",
+      "projet-3": "Identité de Marque",
+      "tag-projet-3": "Storytelling Visuel",
+      "projet-4": "Design Web & Mobile",
+      "tag-projet-4": "Design Web & Mobile"
+    }
+  },
+  "CreativeMind": {
+    "_comment": "Section Notre Équipe",
+    "title1": "Rencontrez les esprits créatifs derrière",
+    "title2": "notre succès",
+    "positions": {
+      "wordpress_developer": "Développeur WordPress",
+      "social_media_specialist": "Spécialiste Social Media",
+      "product_designer": "Product Designer",
+      "ui_designer": "Designer UI",
+      "CEOS Nexus Partners": "CEO Nexus Partners"
+    }
+  },
+  "CustomerStories": {
+    "_comment": "Section Témoignages",
+    "title1": "Ce que nos clients satisfaits disent",
+    "title2": "de nous",
+    "label": "Témoignages clients",
+    "facts_label": "Site vitrine",
+    "story1": {
+      "text": "“Grâce à Nexus Partners, nous disposons désormais d'un site web clair, fonctionnel et intuitif, optimisé pour le SEO local. L'automatisation du système de prise de rendez-vous, que ce soit via Google Meet ou directement au cabinet, nous permet de gagner un temps précieux tout en attirant davantage de clients. ”",
+      "author": "Stéphanie GBEHOUNHESSI",
+      "position": "Fondatrice du Cabinet ART DE VIVRE"
+    },
+    "fact1": {
+      "text": " Consulter le projet",
+      "link": "https://cabinetartdevivre.com/"
+    },
+
+    "story2": {
+      "text": "“L'équipe de Nexus Partners a su capter l'essence de notre agence Empreinte Finale avec un site web professionnel et optimisé. Grâce à leur expertise en SEO local. Un partenariat qui a vraiment fait la différence !”",
+      "author": "Audrey DAGBA",
+      "position": "Fondatrice de l'agence Empreinte Finale"
+    },
+    "fact2": {
+      "text": " Consulter le projet",
+      "link": "https://empreintefinale.com/"
+    }
+  },
+  "Subscription": {
+    "_comment": "Section Tarification",
+    "title1": "Choisissez le pack qui convient à votre",
+    "title2": "entreprise",
+    "price_per_month": "/mois",
+    "cta": "Collaborons",
+    "features_label": "Fonctionnalités",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Pour les entreprises qui ont besoin d'un support design. Une demande à la fois.",
+        "features": [
+          "Mises à jour tous les 2 jours",
+          "Designer de niveau intermédiaire",
+          "Optimisation SEO",
+          "Analyses mensuelles",
+          "2 Appels par mois",
+          "Assets libres de droits"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "2x plus rapide. Idéal pour un MVP, une Web App ou des problèmes complexes.",
+        "features": [
+          "Mises à jour quotidiennes",
+          "Designer Senior",
+          "Cadre de conseil en IA",
+          "Équipe créative complète",
+          "4 Appels par mois",
+          "Assets libres de droits"
+        ]
+      }
+    }
+  },
+  "Faq": {
+    "_comment": "Section FAQ",
+    "title1": "Vous avez des questions ? Nous avons des",
+    "title2": "réponses",
+    "questions": {
+      "services": {
+        "que": "Quels services propose Nexus Partners ?",
+        "ans": "Nous proposons une gamme complète de services numériques : création de sites web (vitrine, e-commerce), développement d'applications sur mesure, optimisation SEO locale et solutions d'automatisation WhatsApp."
+      },
+      "duration": {
+        "que": "Combien de temps prend un projet typique ?",
+        "ans": "La durée dépend de la complexité. Un site vitrine prend généralement 2 à 3 semaines, tandis qu'une application métier plus complexe peut prendre 6 à 10 semaines."
+      },
+      "pricing": {
+        "que": "Comment est structurée la tarification ?",
+        "ans": "Nous fonctionnons soit au forfait pour les projets bien définis, soit par abonnement pour un accompagnement continu (Design & Tech as a service)."
+      },
+      "support": {
+        "que": "Offrez-vous un support après la livraison ?",
+        "ans": "Oui, nous fournissons un support post-lancement de 30 jours minimum et proposons des forfaits de maintenance pour garantir la sécurité et la performance de vos outils."
+      }
+    }
+  },
+  "Achievements": {
+    "_comment": "Section Distinctions",
+    "title1": "Distinctions et accomplissements célébrant notre",
+    "title2": "excellence design",
+    "items": {
+      "framer": {
+        "title": "Célébré pour un design d'interaction de pointe et des expériences utilisateur fluides.",
+        "sub_title": "Framer Awards"
+      },
+      "dribbble": {
+        "title": "Reconnu pour l'excellence créative et des solutions de design innovantes.",
+        "sub_title": "Dribbble Awards"
+      },
+      "awwwards": {
+        "title": "Honoré du prix du Meilleur Design Web pour la créativité, l'utilisabilité et l'innovation.",
+        "sub_title": "awwwards Awards"
+      }
+    }
+  },
+  "WebResult": {
+    "_comment": "Section Objectifs & Stats",
+    "title": "Nous concevons des stratégies digitales simples, locales et pilotées par la technologie pour générer des résultats concrets et mesurables.",
+    "tags": {
+      "strategy": "Stratégie",
+      "technology": "Technologie",
+      "performance": "Performance"
+    },
+    "title3": "Notre Objectif avant 2029",
+    "stats": {
+      "projects": {
+        "number": "50",
+        "label": "Projets a livree"
+      },
+      "clients": {
+        "number": "100",
+        "label": "Clients a satisfaits avant 2029"
+      },
+      "visibility": {
+        "number": "40",
+        "label": "Entreprises visibles en première position sur Google au Bénin"
+      }
+    }
+  },
+  "Solutions": {
+    "_comment": "Section À Propos / Vision",
+    "title1": "Des solutions digitales pour des",
+    "title2": "entreprises locales audacieuses",
+    "description": "Vous cherchez à booster votre visibilité et vos ventes ? Chez Nexus Partners, nous créons des sites web, du SEO local et des automatisations WhatsApp qui attirent des clients réels et font grandir votre business au Bénin et en Afrique de l’Ouest.",
+    "cta": "Contactez-nous"
+  },
+  "─── PAGE FIN ACCUEIL ───": "",
+
+  "─── PAGE ABOUT ───": "",
+
+  "About": {
+    "Hero": {
+      "title": "À propos de Nexus Partners",
+      "subtitle": "La tech au service de votre croissance locale et durable.",
+      "description": "Nexus Partners est une startup innovante qui développe des outils numériques accessibles pour booster la visibilité et les ventes des artisans, commerçants et PME en Afrique de l’Ouest, avec un focus sur des résultats concrets et mesurables."
+    },
+    "History": {
+      "title": "L'origine de Nexus Partners",
+      "constat": "Nexus Partners est née d’un constat clair : trop d’entreprises locales au Bénin et en Afrique de l’Ouest utilisent le digital sans stratégie, perdant ainsi des clients potentiels chaque jour sur Google ou WhatsApp.",
+      "mission_context": "Nous changeons ça en transformant votre présence en ligne en outil concret : plus de visibilité, plus de contacts et plus de ventes mesurables."
+    },
+    "Philosophy": {
+      "mission": {
+        "title": "Notre Mission",
+        "text": "Accompagner artisans, commerçants et PME à attirer des clients réels et à automatiser leur croissance avec des solutions digitales simples et abordables."
+      },
+      "vision": {
+        "title": "Notre Vision",
+        "text": "Être la startup de référence en Afrique de l’Ouest pour des outils numériques locaux, efficaces et orientés résultats, adaptés aux TPE/PME."
+      },
+      "values": {
+        "title": "Nos Valeurs",
+        "list": [
+          "Simplicité et efficacité au quotidien",
+          "Résultats chiffrés et transparents",
+          "Proximité humaine et écoute",
+          "Innovation pratique, sans complications"
+        ]
+      }
+    },
+    "Founder": {
+      "name": "Ismaël Christian DAOUDA ABASSI",
+      "role": "Fondateur & CEO",
+      "bio": "Passionné par la tech et l’entrepreneuriat local, j'ai lancé Nexus Partners en 2023 pour relier innovation digitale et défis réels des PME africaines. Avec mon expérience en développement web et SEO, j'ai pour objectif d'aider les entreprises,PME et artisans à grandir sans se perdre dans la complexité."
+    },
+    "Team": {
+      "title": "Notre Équipe",
+      "description": "Une petite équipe dynamique de 2 à 10 talents basée à Cotonou, unie par la passion de rendre le digital accessible et rentable pour tous."
+    },
+    "WhyUs": {
+      "title": "Pourquoi Nexus ?",
+      "subtitle": "Un partenaire de croissance durable",
+      "description": "Nous ne construisons pas seulement des sites web. Nous bâtissons les fondations numériques de votre succès futur.",
+      "reasons": [
+        {
+          "title": "Compréhension du marché local",
+          "text": "Nous connaissons les défis réels des entreprises en Afrique de l'Ouest. Notre approche n'est pas seulement technique, elle est culturelle et contextuelle."
+        },
+        {
+          "title": "Solutions adaptées aux budgets PME",
+          "text": "Le digital premium doit être accessible à ceux qui créent l'économie locale. Nous optimisons chaque investissement pour un ROI maximal."
+        },
+        {
+          "title": "Accompagnement humain",
+          "text": "On ne se contente pas de livrer du code. Nous formons vos équipes et vous accompagnons dans la transition numérique de A à Z."
+        },
+        {
+          "title": "Résultats visibles rapidement",
+          "text": "Chaque action digitale est mesurée. Nous suivons l'impact direct sur vos ventes et votre visibilité pour ajuster la stratégie en temps réel."
+        }
+      ]
+    }
+  },
+
+  "─── PAGE FIN ABOUT ───": "",
+
+  "─── PAGE SERVICES ───": "",
+
+  "Services": {
+    "Hero": {
+      "title": "Nos Services : Du Digital qui Vend Vraiment",
+      "subtitle": "Chez Nexus Partners, nous offrons des solutions simples pour booster vos clients et ventes locales – sans complications.",
+      "cta": "Découvrez votre solution idéale"
+    },
+    "Introduction": {
+      "text": "Basés à Cotonou, nous aidons artisans, commerçants et PME à transformer leur présence en ligne en machine à clients. Focus sur le concret : visibilité, contacts et automatisations.",
+      "features": {
+        "visibility": "Visibilité Google",
+        "contacts": "Capture Contacts",
+        "automation": "Messages Auto"
+      }
+    },
+    "ServiceCards": {
+      "title": "Solutions Digital Sur-Mesure",
+      "cards": {
+        "web": {
+          "title": "Sites Web Vendeurs ou Vitrines",
+          "description": "Sites modernes, optimisés pour mobile et conversion.",
+          "benefits": "+ de crédibilité, + de clients directs via Google.",
+          "example": "De 0 à +80% de demandes en 3 mois pour un cabinet déco.",
+          "cta": "En savoir plus"
+        },
+        "seo": {
+          "title": "SEO Local & Visibilité",
+          "description": "Positionnement premier sur Google Maps et recherches locales.",
+          "benefits": "Clients qui vous trouvent sans pubs payantes.",
+          "example": "1er sur 'perruque Cotonou' en 60 jours.",
+          "cta": "En savoir plus"
+        },
+        "automation": {
+          "title": "Automatisations WhatsApp & Email",
+          "description": "Messages auto intelligents (relances fin de mois, promos ciblées).",
+          "benefits": "+ de ventes sans effort manuel.",
+          "example": "Ventes doublées via WhatsApp pour un commerce local.",
+          "cta": "En savoir plus"
+        },
+        "ai": {
+          "title": "Mini-IA & Analyse Data",
+          "description": "Outils simples pour voir ce que veulent vos clients.",
+          "benefits": "Promos personnalisées, gain de temps.",
+          "example": "Identification des produits stars pour ciblage précis.",
+          "cta": "En savoir plus"
+        }
+      }
+    },
+    "Testimonials": {
+      "title": "Résultats Réels pour des Partenaires Comme Vous",
+      "items": [
+        {
+          "quote": "Grâce à Nexus, notre site attire +80% de demandes !",
+          "author": "Cabinet Art de Vivre",
+          "metric": "+80% de demandes"
+        },
+        {
+          "quote": "SEO local au top : 1er sur Google Maps en 2 mois.",
+          "author": "Empreinte Finale",
+          "metric": "1er sur Google Maps"
+        },
+        {
+          "quote": "Automatisations WhatsApp = ventes doublées sans effort.",
+          "author": "Commerce Local",
+          "metric": "Ventes x2"
+        }
+      ]
+    },
+    "Process": {
+      "title": "Comment Ça Marche ?",
+      "subtitle": "On s'occupe de tout, vous voyez les clients arriver.",
+      "steps": [
+        {
+          "title": "Contact & Analyse",
+          "description": "Gratuit. On écoute vos besoins et votre contexte."
+        },
+        {
+          "title": "Proposition Sur Mesure",
+          "description": "Solution adaptée à votre budget et objectifs."
+        },
+        {
+          "title": "Mise en Place Rapide",
+          "description": "4 semaines max. Déploiement et formation inclus."
+        },
+        {
+          "title": "Suivi & Résultats Mensuels",
+          "description": "Métriques claires et ajustements continus."
+        }
+      ]
+    },
+    "FinalCTA": {
+      "title": "Prêt à Booster Vos Ventes ?",
+      "subtitle": "Parlez-nous de votre besoin en 15 min. Gratuit & sans engagement.",
+      "buttons": {
+        "whatsapp": "Contact WhatsApp",
+        "evaluation": "Évaluation Gratuite",
+        "call": "Appel Direct"
+      },
+      "form": {
+        "name": "Nom complet",
+        "email": "Email",
+        "need": "Quel est votre besoin ?",
+        "need_options": {
+          "visibility": "Visibilité (SEO, Google)",
+          "website": "Site Web",
+          "automation": "Automatisations",
+          "other": "Autre"
+        },
+        "submit": "Envoyer ma demande"
+      }
+    }
+  },
+
+  "─── PAGE FIN SERVICES ───": "",
+
+  "ContactPage": {
+    "Hero": {
+      "title": "Prêt à transformer votre avenir ? Parlons-en.",
+      "subtitle": "Nos experts sont à votre écoute pour discuter de vos projets stratégiques et digitaux."
+    },
+    "ContactInfo": {
+      "title": "Nos bureaux",
+      "address": "Siège Social, Quartier Haie Vive, Cotonou, Bénin",
+      "phone": "+229 01 97 00 00 00",
+      "email": "contact@nexuspartners.xyz",
+      "schedule": "Lun-Ven : 9h00 - 18h00"
+    },
+    "Trust": {
+      "title": "Pourquoi nous contacter ?",
+      "responsiveness": {
+        "title": "Réactivité",
+        "desc": "Réponse garantie sous 24h ouvrées."
+      },
+      "expertise": {
+        "title": "Expertise Directe",
+        "desc": "Échange direct avec un consultant senior."
+      },
+      "confidentiality": {
+        "title": "Confidentialité",
+        "desc": "Vos projets traités avec discrétion absolue."
+      }
+    }
+  },
+  "ContactForm": {
+    "title": "Envoyez-nous un message",
+    "success": {
+      "title": "Message reçu !",
+      "message": "Votre demande a bien été transmise. Nos équipes vous recontacteront sous 24h.",
+      "cta": "Retour à l'accueil"
+    },
+    "labels": {
+      "name": "Nom & Prénom",
+      "company": "Entreprise (Optionnel)",
+      "email": "Email Professionnel",
+      "phone": "Téléphone",
+      "subject": "Sujet de la demande",
+      "message": "Votre Message",
+      "consent": "J'accepte que mes données soient traitées pour me recontacter."
+    },
+    "placeholders": {
+      "name": "Jean Dupont",
+      "company": "Votre Société",
+      "email": "jean@entreprise.com",
+      "phone": "+229 ...",
+      "message": "Décrivez votre projet..."
+    },
+    "subjects": {
+      "partnership": "Demande de Partenariat",
+      "quote": "Demande de Devis",
+      "recruitment": "Recrutement / Carrières",
+      "press": "Presse & Médias",
+      "other": "Autre demande"
+    },
+    "submit": "Discuter avec un expert"
+  },
+  "─── SECTION SERVICES ───": "",
+  "─── SECTION BRAND ───": "",
+  "─── SECTION WEB RESULT ───": ""
+}

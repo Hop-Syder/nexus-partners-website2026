@@ -1,0 +1,340 @@
+{
+  "Hero": {
+    "_comment": "Home Section",
+    "title1": "Digital solutions designed to sell,",
+    "title2": "not just to impress",
+    "description": "Nexus Partners accompanies local businesses with selling or showcase websites, customized applications, local SEO, and WhatsApp automations that generate real customers, month after month.",
+    "cta": "How it works"
+  },
+  "Layout": {
+    "header": {
+      "cta": "Start a project",
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "work": "Projects",
+        "contact": "Contact"
+      }
+    },
+    "footer": {
+      "description": "Empowering local businesses to grow through simple, effective, and results-oriented digital solutions.",
+      "rights": "© All rights reserved by Nexus Partners",
+      "links": "🔗 Useful Links",
+      "pages": "📄 Legal Pages",
+      "contact": "📍 Contact",
+      "socials": "🌐 Social Media",
+      "legal": {
+        "terms": "Terms & Conditions",
+        "privacy": "Privacy Policy",
+        "notices": "Legal Notices",
+        "docs": "Documentation"
+      }
+    }
+  },
+  "Brand": {
+    "title": "They trust us for their digital strategy"
+  },
+  "Innovation": {
+    "_comment": "Services & Innovation Section",
+    "title1": "Our Services to transform ",
+    "title2": "your business",
+    "services": {
+      "brand_strategy": "Brand\nStrategy",
+      "digital_marketing": "Digital\nMarketing",
+      "uiux_design": "UI/UX\nDesign",
+      "analytics_reporting": "Analytics &\nReporting",
+      "web_development": "Web\nDevelopment",
+      "seo_local": "Local SEO",
+      "whatsapp_automation": "WhatsApp Automation"
+    },
+    "cta_banner": {
+      "title": "Your clients are looking for you. Are you ready to find them? \n Discover how Nexus Partners can put you in front of them!",
+      "collaborate": "Let's Collaborate",
+      "portfolio": "View Portfolio"
+    }
+  },
+  "NosProjets": {
+    "_comment": "Projects Section",
+    "title1": "Our projects ",
+    "title2": "Web & digital solutions",
+    "title3": "that boost your sales",
+    "tags": {
+      "projet-1": "Art de Vivre Cabinet",
+      "tag-projet-1": "Showcase website",
+      "projet-2": "Empreinte finale",
+      "tag-projet-2": "Showcase website",
+      "projet-3": "Brand Identity",
+      "tag-projet-3": "Visual Storytelling",
+      "projet-4": "Web & Mobile Design",
+      "tag-projet-4": "Web & Mobile Design"
+    }
+  },
+  "CreativeMind": {
+    "_comment": "Team Section",
+    "title1": "Meet the creative minds behind",
+    "title2": "our success",
+    "positions": {
+      "wordpress_developer": "WordPress Developer",
+      "social_media_specialist": "Social Media Specialist",
+      "product_designer": "Product Designer",
+      "ui_designer": "UI Designer",
+      "CEOS Nexus Partners": "CEO Nexus Partners"
+    }
+  },
+  "CustomerStories": {
+    "_comment": "Testimonials Section",
+    "title1": "What our satisfied customers say",
+    "title2": "about us",
+    "label": "Customer Stories",
+    "facts_label": "Showcase website",
+    "story1": {
+      "text": "“Thanks to Nexus Partners, we now have a clear, functional, and intuitive website, optimized for local SEO. The automation of the appointment booking system, whether via Google Meet or directly at the office, allows us to save precious time while attracting more clients.”",
+      "author": "Stéphanie GBEHOUNHESSI",
+      "position": "Founder of ART DE VIVRE Cabinet"
+    },
+    "fact1": {
+      "text": " View project",
+      "link": "https://cabinetartdevivre.com/"
+    },
+    "story2": {
+      "text": "“The Nexus Partners team captured the essence of our Empreinte Finale agency with a professional and optimized website. Thanks to their expertise in local SEO. A partnership that truly made a difference!”",
+      "author": "Audrey DAGBA",
+      "position": "Founder of Empreinte Finale agency"
+    },
+    "fact2": {
+      "text": "View project",
+      "link": "https://empreintefinale.com/"
+    }
+  },
+  "Subscription": {
+    "_comment": "Pricing Section",
+    "title1": "Choose the pack that suits your",
+    "title2": "business",
+    "price_per_month": "/month",
+    "cta": "Let's Collaborate",
+    "features_label": "Features",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "For companies that need design support. One request at a time.",
+        "features": [
+          "Updates every 2 days",
+          "Intermediate level designer",
+          "SEO Optimization",
+          "Monthly analytics",
+          "2 Calls per month",
+          "Royalty-free assets"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "2x faster. Ideal for a MVP, a Web App or complex problems.",
+        "features": [
+          "Daily updates",
+          "Senior Designer",
+          "AI Consulting framework",
+          "Full creative team",
+          "4 Calls per month",
+          "Royalty-free assets"
+        ]
+      }
+    }
+  },
+  "Faq": {
+    "_comment": "FAQ Section",
+    "title1": "Got questions? We've got",
+    "title2": "answers",
+    "questions": {
+      "services": {
+        "que": "What services does Nexus Partners offer?",
+        "ans": "We offer a full range of digital services: website creation (showcase, e-commerce), custom application development, local SEO optimization, and WhatsApp automation solutions."
+      },
+      "duration": {
+        "que": "How long does a typical project take?",
+        "ans": "The duration depends on complexity. A showcase site typically takes 2 to 3 weeks, while a more complex business application can take 6 to 10 weeks."
+      },
+      "pricing": {
+        "que": "How is the pricing structured?",
+        "ans": "We work either on a fixed price for well-defined projects or on a subscription basis for continuous support (Design & Tech as a service)."
+      },
+      "support": {
+        "que": "Do you offer support after delivery?",
+        "ans": "Yes, we provide post-launch support for a minimum of 30 days and offer maintenance packages to ensure the security and performance of your tools."
+      }
+    }
+  },
+  "Achievements": {
+    "_comment": "Achievements Section",
+    "title1": "Accolades and achievements celebrating our",
+    "title2": "design excellence",
+    "items": {
+      "framer": {
+        "title": "Celebrated for cutting-edge interaction design and seamless user experiences.",
+        "sub_title": "Framer Awards"
+      },
+      "dribbble": {
+        "title": "Recognized for creative excellence and innovative design solutions.",
+        "sub_title": "Dribbble Awards"
+      },
+      "awwwards": {
+        "title": "Honored with the Best Website Design for creativity, usability, and innovation.",
+        "sub_title": "awwwards Awards"
+      }
+    }
+  },
+  "WebResult": {
+    "_comment": "Objectives & Stats Section",
+    "title": "We design digital strategies that are simple, local, and technology-driven to generate concrete and measurable results.",
+    "tags": {
+      "strategy": "Strategy",
+      "technology": "Technology",
+      "performance": "Performance"
+    },
+    "title3": "Our Objective by 2029",
+    "stats": {
+      "projects": {
+        "number": "50",
+        "label": "Projects to deliver"
+      },
+      "clients": {
+        "number": "100",
+        "label": "Satisfied Clients by 2029"
+      },
+      "visibility": {
+        "number": "40",
+        "label": "Companies ranked #1 on Google in Benin"
+      }
+    }
+  },
+  "Solutions": {
+    "_comment": "About Section / Vision",
+    "title1": "Digital solutions for",
+    "title2": "bold local businesses",
+    "description": "Looking to boost your visibility and sales? At Nexus Partners, we create websites, local SEO, and WhatsApp automations that attract real customers and grow your business in Benin and West Africa.",
+    "cta": "Contact us"
+  },
+  "About": {
+    "Hero": {
+      "title": "About Nexus Partners",
+      "subtitle": "Connecting technology to the real growth of local businesses.",
+      "description": "Nexus Partners is a tech startup based in Cotonou, specializing in creating simple and effective digital solutions for artisans, traders and SMEs in West Africa."
+    },
+    "History": {
+      "title": "How Nexus Partners was born",
+      "constat": "Nexus Partners was born from a simple observation: many local businesses use digital without a clear strategy and lose customers every day.",
+      "mission_context": "Our mission is to transform this digital presence into concrete results: visibility, customers and sales."
+    },
+    "Philosophy": {
+      "mission": {
+        "title": "Mission",
+        "text": "Help local businesses attract more customers and automate their growth through accessible digital solutions."
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "Become the West African reference in simple, local and results-oriented digital solutions for VSEs/SMEs."
+      },
+      "values": {
+        "title": "Values",
+        "list": [
+          "Simplicity & Efficiency",
+          "Measurable results",
+          "Human proximity",
+          "Useful innovation"
+        ]
+      }
+    },
+    "Founder": {
+      "name": "Ismaël Christian DAOUDA ABASSI",
+      "role": "Founder & Director",
+      "bio": "Passionate about technology and SME growth, Ismaël founded Nexus Partners to connect digital innovation and African field reality."
+    },
+    "Team": {
+      "title": "Our Team",
+      "description": "A dynamic small team based in Cotonou, united by the passion to make digital accessible and profitable for everyone."
+    },
+    "WhyUs": {
+      "title": "Why Nexus?",
+      "subtitle": "A sustainable growth partner",
+      "description": "We don't just build websites. We build the digital foundations for your future success.",
+      "reasons": [
+        {
+          "title": "Local market understanding",
+          "text": "We know the real challenges of West African businesses. Our approach is not just technical, it's cultural and contextual."
+        },
+        {
+          "title": "Solutions for SME budgets",
+          "text": "Premium digital must be accessible to those who create the local economy. We optimize every investment for maximum ROI."
+        },
+        {
+          "title": "Human accompaniment",
+          "text": "We don't just deliver code. We train your teams and accompany you in the digital transition from A to Z."
+        },
+        {
+          "title": "Fast visible results",
+          "text": "Every digital action is measured. We track the direct impact on your sales and visibility to adjust the strategy in real-time."
+        }
+      ]
+    }
+  },
+  "ContactPage": {
+    "Hero": {
+      "title": "Ready to transform your future? Let's talk.",
+      "subtitle": "Our experts are ready to discuss your strategic and digital projects."
+    },
+    "ContactInfo": {
+      "title": "Our Offices",
+      "address": "Headquarters, Haie Vive District, Cotonou, Benin",
+      "phone": "+229 01 97 00 00 00",
+      "email": "contact@nexuspartners.xyz",
+      "schedule": "Mon-Fri: 9:00 AM - 6:00 PM"
+    },
+    "Trust": {
+      "title": "Why Contact Us?",
+      "responsiveness": {
+        "title": "Responsiveness",
+        "desc": "Guaranteed response within 24 business hours."
+      },
+      "expertise": {
+        "title": "Direct Expertise",
+        "desc": "Direct exchange with a senior consultant."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "desc": "Your projects treated with absolute discretion."
+      }
+    }
+  },
+  "ContactForm": {
+    "title": "Send us a message",
+    "success": {
+      "title": "Message Received!",
+      "message": "Your request has been successfully transmitted. Our teams will contact you within 24 hours.",
+      "cta": "Back to Home"
+    },
+    "labels": {
+      "name": "Full Name",
+      "company": "Company (Optional)",
+      "email": "Professional Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Your Message",
+      "consent": "I agree to have my data processed to be contacted."
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "company": "Your Company",
+      "email": "john@company.com",
+      "phone": "+229 ...",
+      "message": "Describe your project..."
+    },
+    "subjects": {
+      "partnership": "Partnership Request",
+      "quote": "Quote Request",
+      "recruitment": "Recruitment / Careers",
+      "press": "Press & Media",
+      "other": "Other Inquiry"
+    },
+    "submit": "Talk to an expert"
+  }
+}
