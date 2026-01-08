@@ -35,7 +35,7 @@ const Founder = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
-                        className="lg:w-1/2 relative"
+                        className="w-full lg:w-1/2 relative"
                     >
                         {/* Background Text Accent */}
                         <div className="absolute top-0 left-0 -translate-x-4 -translate-y-4 text-[6rem] sm:text-[12rem] font-bold text-dark_black/[0.03] dark:text-white/[0.03] select-none pointer-events-none uppercase">
