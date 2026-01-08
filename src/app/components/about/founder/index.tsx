@@ -121,6 +121,14 @@ const Founder = () => {
                             <div className="flex flex-col">
                                 <span className="text-xl font-bold text-dark_black dark:text-white">{t('Founder.name')}</span>
                                 <span className="text-sm uppercase tracking-widest text-dark_black/40 dark:text-white/40">{t('Founder.role')}</span>
+                                <Link
+                                    href="https://ceo.nexus-partners.xyz/"
+                                    target="_blank"
+                                    className="group flex items-center gap-2 mt-2 text-xs font-bold uppercase tracking-widest text-brand-yellow hover:text-brand-yellow/80 transition-colors w-fit"
+                                >
+                                    Portfolio
+                                    <Icon icon="ph:arrow-right-bold" className="group-hover:translate-x-1 transition-transform" />
+                                </Link>
                             </div>
                         </div>
                     </motion.div>
