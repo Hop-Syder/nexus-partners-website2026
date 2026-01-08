@@ -65,7 +65,7 @@ const Founder = () => {
                                     <div className="w-2 h-2 rounded-full bg-green animate-pulse"></div>
                                     <span className="text-xs font-bold uppercase tracking-widest text-dark_black/40 dark:text-white/40 italic instrument-font">Fondateur & Directeur</span>
                                 </div>
-                                <h4 className="text-2xl font-bold text-dark_black dark:text-white">Ismaël Christian</h4>
+                                <h4 className="text-2xl font-bold text-dark_black dark:text-white">I. DAOUDA ABASSI</h4>
                             </motion.div>
                         </div>
                     </motion.div>
