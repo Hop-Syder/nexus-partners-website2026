@@ -39,7 +39,6 @@ const Founder = () => {
                     >
                         {/* Background Text Accent */}
                         <div className="absolute top-0 left-0 -translate-x-4 -translate-y-4 text-[6rem] sm:text-[12rem] font-bold text-dark_black/[0.03] dark:text-white/[0.03] select-none pointer-events-none uppercase">
-                            Visionary
                         </div>
 
                         <div className="relative z-10">
