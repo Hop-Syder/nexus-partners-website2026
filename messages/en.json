@@ -336,5 +336,116 @@
       "other": "Other Inquiry"
     },
     "submit": "Talk to an expert"
+  },
+  "Services": {
+    "Hero": {
+      "title": "Our Services: Digital That Actually Sells",
+      "subtitle": "At Nexus Partners, we offer simple solutions to boost your local customers and sales – without complications.",
+      "cta": "Discover your ideal solution"
+    },
+    "Introduction": {
+      "text": "Based in Cotonou, we help artisans, merchants, and SMEs transform their online presence into a customer-generating machine. Focus on the concrete: visibility, contacts, and automations.",
+      "features": {
+        "visibility": "Google Visibility",
+        "contacts": "Contact Capture",
+        "automation": "Auto Messages"
+      }
+    },
+    "ServiceCards": {
+      "title": "Custom Digital Solutions",
+      "cards": {
+        "web": {
+          "title": "Sales or Showcase Websites",
+          "description": "Modern sites, optimized for mobile and conversion.",
+          "benefits": "+ credibility, + direct customers via Google.",
+          "example": "From 0 to +80% requests in 3 months for a design firm.",
+          "cta": "Learn more"
+        },
+        "seo": {
+          "title": "Local SEO & Visibility",
+          "description": "Top ranking on Google Maps and local searches.",
+          "benefits": "Customers who find you without paid ads.",
+          "example": "1st for 'wig Cotonou' in 60 days.",
+          "cta": "Learn more"
+        },
+        "automation": {
+          "title": "WhatsApp & Email Automations",
+          "description": "Smart auto messages (end-of-month reminders, targeted promos).",
+          "benefits": "+ sales without manual effort.",
+          "example": "Sales doubled via WhatsApp for a local business.",
+          "cta": "Learn more"
+        },
+        "ai": {
+          "title": "Mini-AI & Data Analysis",
+          "description": "Simple tools to see what your customers want.",
+          "benefits": "Personalized promos, time savings.",
+          "example": "Identification of star products for precise targeting.",
+          "cta": "Learn more"
+        }
+      }
+    },
+    "Testimonials": {
+      "title": "Real Results for Partners Like You",
+      "items": [
+        {
+          "quote": "Thanks to Nexus, our site attracts +80% requests!",
+          "author": "Art de Vivre Firm",
+          "metric": "+80% requests"
+        },
+        {
+          "quote": "Top local SEO: 1st on Google Maps in 2 months.",
+          "author": "Empreinte Finale",
+          "metric": "1st on Google Maps"
+        },
+        {
+          "quote": "WhatsApp automations = sales doubled without effort.",
+          "author": "Local Business",
+          "metric": "Sales x2"
+        }
+      ]
+    },
+    "Process": {
+      "title": "How Does It Work?",
+      "subtitle": "We take care of everything, you see the customers arrive.",
+      "steps": [
+        {
+          "title": "Contact & Analysis",
+          "description": "Free. We listen to your needs and context."
+        },
+        {
+          "title": "Custom Proposal",
+          "description": "Solution adapted to your budget and goals."
+        },
+        {
+          "title": "Fast Implementation",
+          "description": "4 weeks max. Deployment and training included."
+        },
+        {
+          "title": "Monthly Tracking & Results",
+          "description": "Clear metrics and continuous adjustments."
+        }
+      ]
+    },
+    "FinalCTA": {
+      "title": "Ready to Boost Your Sales?",
+      "subtitle": "Tell us about your need in 15 min. Free & no commitment.",
+      "buttons": {
+        "whatsapp": "WhatsApp Contact",
+        "evaluation": "Free Evaluation",
+        "call": "Direct Call"
+      },
+      "form": {
+        "name": "Full name",
+        "email": "Email",
+        "need": "What is your need?",
+        "need_options": {
+          "visibility": "Visibility (SEO, Google)",
+          "website": "Website",
+          "automation": "Automations",
+          "other": "Other"
+        },
+        "submit": "Send my request"
+      }
+    }
   }
 }
