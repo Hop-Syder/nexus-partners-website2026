@@ -29,8 +29,7 @@
       "legal": {
         "terms": "Conditions Générales",
         "privacy": "Politique de Confidentialité",
-        "notices": "Mentions légales",
-        "docs": "Documentation"
+        "notices": "Mentions légales"
       }
     }
   },
@@ -411,7 +410,7 @@
     "ContactInfo": {
       "title": "Nos bureaux",
       "address": "Siège Social, Quartier Haie Vive, Cotonou, Bénin",
-      "phone": "+229 01 97 00 00 00",
+      "phone": "+229 01 96 70 17 33",
       "email": "contact@nexus-partners.xyz",
       "schedule": "Lun-Ven : 9h00 - 18h00"
     },
@@ -451,7 +450,7 @@
       "name": "Jean Dupont",
       "company": "Votre Société",
       "email": "jean@entreprise.com",
-      "phone": "+229 ...",
+      "phone": "+229 01 96 70 17 33",
       "message": "Décrivez votre projet..."
     },
     "subjects": {
@@ -465,5 +464,42 @@
   },
   "─── SECTION SERVICES ───": "",
   "─── SECTION BRAND ───": "",
-  "─── SECTION WEB RESULT ───": ""
+  "─── SECTION WEB RESULT ───": "",
+  "LegalNotices": {
+    "title": "Mentions Légales",
+    "publisher": {
+      "title": "Éditeur du site",
+      "name": "Nexus Partners",
+      "status": "Startup technologique par Ismaël Christian DAOUDA ABASSI",
+      "address": "Quartier Haie Vive, Cotonou, Bénin",
+      "email": "Email : contact@nexus-partners.xyz",
+      "phone": "Téléphone : +229 01 96 70 17 33"
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "name": "Le site est hébergé par Vercel Inc.",
+      "address": "440 N Barranca Ave #4133, Covina, CA 91723"
+    },
+    "property": {
+      "title": "Propriété intellectuelle",
+      "text": "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés."
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "intro": "Cette déclaration de confidentialité explique comment les informations personnelles de nos clients (potentiels) et des autres personnes utilisant nos services sont collectées, utilisées et divulguées par Nexus Partners.",
+    "collection": {
+      "title": "Collecte d'informations personnelles",
+      "text": "Lors de l'utilisation de nos Services, nous pouvons vous demander de nous fournir certaines informations personnellement identifiables qui peuvent être utilisées pour vous contacter ou vous identifier. Les types d'informations que nous pouvons collecter incluent les informations de base de l'utilisateur (telles que votre nom, votre adresse e-mail, votre téléphone)."
+    },
+    "consent": "En vous inscrivant à nos Services, vous acceptez la collecte et l'utilisation des informations décrites dans cette déclaration."
+  },
+  "TermsAndConditions": {
+    "title": "Conditions Générales",
+    "intro": "Les présentes conditions générales de service de Nexus Partners constituent un accord entre Nexus Partners et l'entité ou la personne passant une commande ou accédant aux services.",
+    "definitions": {
+      "title": "1. Définitions",
+      "services": "Les produits et services propriétaires de Nexus Partners basés sur le web, ainsi que les applications téléchargeables."
+    }
+  }
 }

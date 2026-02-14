@@ -51,8 +51,7 @@ const footerData = {
         links: [
             { name: "Conditions Générales", url: "/terms-and-conditions", key: "terms" },
             { name: "Politique de Confidentialité", url: "/privacy-policy", key: "privacy" },
-            { name: "Mentions légales", url: "/legal-notices", key: "notices" },
-            { name: "Documentation", url: "/documentation", key: "docs" }
+            { name: "Mentions légales", url: "/legal-notices", key: "notices" }
         ]
     },
     contactDetails: {

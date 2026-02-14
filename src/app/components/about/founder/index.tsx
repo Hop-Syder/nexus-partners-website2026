@@ -93,7 +93,7 @@ const Founder = () => {
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
                             <div className="flex gap-4">
                                 <Link
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/company/nexus-partners-bj"
                                     className="w-14 h-14 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:scale-110 transition-all bg-white dark:bg-white/5 overflow-hidden p-3"
                                 >
                                     <Image

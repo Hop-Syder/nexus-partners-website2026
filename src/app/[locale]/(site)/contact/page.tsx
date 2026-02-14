@@ -77,10 +77,10 @@ export default function Page() {
 
                                 {/* Social Links */}
                                 <div className="flex gap-4 mt-4">
-                                    <Link href="https://linkedin.com" target="_blank" className="w-10 h-10 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:border-brand-yellow transition-all duration-300 group">
+                                    <Link href="https://www.linkedin.com/company/nexus-partners-bj" target="_blank" className="w-10 h-10 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:border-brand-yellow transition-all duration-300 group">
                                         <Icon icon="ph:linkedin-logo-bold" className="text-lg text-dark_black dark:text-white group-hover:text-dark_black" />
                                     </Link>
-                                    <Link href="https://wa.me/2290197000000" target="_blank" className="w-10 h-10 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:border-brand-yellow transition-all duration-300 group">
+                                    <Link href="https://wa.me/2290196701733" target="_blank" className="w-10 h-10 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:border-brand-yellow transition-all duration-300 group">
                                         <Icon icon="ph:whatsapp-logo-bold" className="text-lg text-dark_black dark:text-white group-hover:text-dark_black" />
                                     </Link>
                                 </div>

@@ -82,6 +82,27 @@ export default async function Layout({
         </NextIntlClientProvider>
         <SpeedInsights />
         <Analytics />
+        <Script id="json-ld" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Nexus Partners",
+            "url": "https://nexus-partners.xyz",
+            "logo": "https://nexus-partners.xyz/images/logo/logo-nexuspartners.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+2290196701733",
+              "contactType": "customer service",
+              "areaServed": "BJ",
+              "availableLanguage": ["French", "English"]
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/nexus-partners-bj",
+              "https://www.facebook.com/profile.php?id=61566371714392",
+              "https://www.instagram.com/nexuspartners.agency/"
+            ]
+          })}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SXG1HDV56J"
           strategy="afterInteractive"

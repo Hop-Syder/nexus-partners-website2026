@@ -48,7 +48,7 @@ const SingleCreativeMind = ({
                         </svg>
                     </Link>
                     <Link
-                        href={linkedinLink}
+                        href="https://www.linkedin.com/company/nexus-partners-bj"
                         className='group hover:opacity-80 transition-opacity duration-200'>
                         <Image
                             src="/images/reseau/linkedin.png"

@@ -27,8 +27,7 @@
       "legal": {
         "terms": "Terms & Conditions",
         "privacy": "Privacy Policy",
-        "notices": "Legal Notices",
-        "docs": "Documentation"
+        "notices": "Legal Notices"
       }
     }
   },
@@ -285,7 +284,7 @@
     "ContactInfo": {
       "title": "Our Offices",
       "address": "Headquarters, Haie Vive District, Cotonou, Benin",
-      "phone": "+229 01 97 00 00 00",
+      "phone": "+229 01 96 70 17 33",
       "email": "contact@nexus-partners.xyz",
       "schedule": "Mon-Fri: 9:00 AM - 6:00 PM"
     },
@@ -446,6 +445,43 @@
         },
         "submit": "Send my request"
       }
+    }
+  },
+  "LegalNotices": {
+    "title": "Legal Notices",
+    "publisher": {
+      "title": "Site Publisher",
+      "name": "Nexus Partners",
+      "status": "Tech startup founded by Ismaël Christian DAOUDA ABASSI",
+      "address": "Haie Vive District, Cotonou, Benin",
+      "email": "Email: contact@nexus-partners.xyz",
+      "phone": "Phone: +229 01 96 70 17 33"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "name": "Hosted by Vercel Inc.",
+      "address": "440 N Barranca Ave #4133, Covina, CA 91723"
+    },
+    "property": {
+      "title": "Intellectual Property",
+      "text": "This website is protected by international copyright and intellectual property laws. All rights reserved."
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Statement explains how Personal Information about our customers is collected, used and disclosed by Nexus Partners.",
+    "collection": {
+      "title": "Personal Information Collection",
+      "text": "While using our Services, we may ask you to provide us with certain personally identifiable information. This includes your name, email address, and phone number."
+    },
+    "consent": "By signing up for our Services, you agree to the collection and use of information as described in this statement."
+  },
+  "TermsAndConditions": {
+    "title": "Terms & Conditions",
+    "intro": "These Terms of Service constitute an agreement between Nexus Partners and the entity or person accessing the Services.",
+    "definitions": {
+      "title": "1. Definitions",
+      "services": "Nexus Partners' proprietary web-based products and services."
     }
   }
 }
