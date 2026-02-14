@@ -42,7 +42,7 @@ function Solutions() {
                 </p>
               </div>
               <Link
-                href='/contact'
+                href='https://forms.office.com/r/3FWqQ2n2YT'
                 className='group w-fit text-dark_black font-bold bg-brand-yellow rounded-full flex items-center gap-4 py-3 pl-6 pr-3 hover:bg-transparent border border-brand-yellow transition-all duration-300 hover:text-brand-yellow shadow-xl hover:shadow-brand-yellow/20'>
                 <span className='group-hover:translate-x-9 transform transition-transform duration-300 ease-in-out'>
                   {t('cta')}

@@ -98,14 +98,18 @@ const NosProjetsList = [
     title: 'projet-1',
     tag: ['tag-projet-1'],
     link: 'https://www.cabinetartdevivre.com',
+    description:
+      'Cabinet ART DE VIVRE est un site vitrine professionnel conçu pour un cabinet de psychologie.\n\nFramework & stack utilisés :\n• Frontend statique optimisé (HTML5, CSS3, JavaScript ES6)\n• Animations et micro‑interactions (AOS, Swiper)\n\nFonctionnalités intégrées :\n• Formulaires de contact et de prise de rendez‑vous avec validation avancée (PHP + JotForm)\n• Calendrier de réservation synchronisé\n• Optimisation SEO technique (métadonnées, données structurées, Google Tag Manager)\n• Sécurité renforcée (CSP, reCAPTCHA, conformité HIPAA‑friendly)\n• Design responsive et expérience fluide sur mobile et desktop',
   },
   {
     image: '/images/service/empreintefinale.png',
     title: 'projet-2',
     tag: ['tag-projet-2'],
     link: 'https://empreintefinale.com/',
+    description:
+      'Empreinte Finale est un site vitrine professionnel pour une agence, conçu pour renforcer la crédibilité et la visibilité locale.\n\nFramework & stack utilisés :\n• Frontend moderne (HTML5, CSS3, JavaScript)\n• Intégration CMS ou génération statique selon besoins\n• Optimisation performances et référencement\n\nFonctionnalités intégrées :\n• SEO local avancé (positionnement premier sur Google Maps)\n• Mise en avant des services et de l’équipe\n• Design professionnel et responsive\n• Formulaires de contact et prise de rendez-vous',
   },
-  
+
 ]
 
 const creativeMindList = [

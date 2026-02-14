@@ -35,9 +35,9 @@ function HeroSection() {
 
   return (
     <section className='overflow-hidden'>
-      <div className='relative w-full pt-44 2xl:pb-20 pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-blue_gradient before:via-white before:to-yellow_gradient before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-dark_blue_gradient dark:before:via-black dark:before:to-dark_yellow_gradient dark:before:rounded-full dark:before:blur-3xl dark:before:-z-10'>
+      <div className='relative w-full pt-56 2xl:pb-36 pb-24 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-blue_gradient before:via-white before:to-yellow_gradient before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-dark_blue_gradient dark:before:via-black dark:before:to-dark_yellow_gradient dark:before:rounded-full dark:before:blur-3xl dark:before:-z-10'>
         <div className='container relative z-10'>
-          <div ref={ref} className='flex flex-col gap-8'>
+          <div ref={ref} className='flex flex-col gap-12'>
             {/* ---------------- heading text --------------- */}
             <div
               // {...bottomAnimation}
@@ -57,8 +57,8 @@ function HeroSection() {
 
             <motion.div
               {...bottomAnimation}
-              className='flex flex-col items-center justify-center gap-4'>
-              <div className='flex flex-col items-center justify-center gap-8 w-full sm:flex-row'>
+              className='flex flex-col items-center justify-center gap-8'>
+              <div className='flex flex-col items-center justify-center gap-12 w-full sm:flex-row'>
                 {/* ----------- Get started Link -------------- */}
                 <Link
                   href='/contact'

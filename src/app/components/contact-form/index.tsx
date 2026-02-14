@@ -74,8 +74,8 @@ function ContactForm() {
           />
         </div>
         <div className='flex flex-col gap-4'>
-          <h3 className='text-2xl font-bold text-white'>{t('success.title')}</h3>
-          <p className='text-lg text-white/70 max-w-sm'>
+          <h3 className='text-2xl font-bold text-dark_black dark:text-white'>{t('success.title')}</h3>
+          <p className='text-lg text-dark_black/70 dark:text-white/70 max-w-sm'>
             {t('success.message')}
           </p>
         </div>
@@ -96,18 +96,18 @@ function ContactForm() {
 
   return (
     <div className='relative w-full'>
-      <div className='bg-white/5 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl overflow-hidden'>
-        <h3 className="text-2xl font-bold text-white mb-8 instrument-font italic">{t('title')}</h3>
+      <div className='bg-white/5 backdrop-blur-3xl border border-dark_black/10 dark:border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl overflow-hidden'>
+        <h3 className="text-2xl font-bold text-dark_black dark:text-white mb-8 instrument-font italic">{t('title')}</h3>
 
         <form onSubmit={handleSubmit} className='flex flex-col gap-6 md:gap-8'>
           {/* Row 1: Name & Company */}
           <div className='grid md:grid-cols-2 gap-6'>
             <div className='flex flex-col gap-2'>
-              <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='name'>
+              <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='name'>
                 {t('labels.name')}
               </label>
               <input
-                className='w-full rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white placeholder:text-white/20 text-sm'
+                className='w-full rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white placeholder:text-dark_black/40 dark:placeholder:text-white/20 text-sm'
                 id='name'
                 type='text'
                 name='name'
@@ -118,11 +118,11 @@ function ContactForm() {
               />
             </div>
             <div className='flex flex-col gap-2'>
-              <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='company'>
+              <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='company'>
                 {t('labels.company')}
               </label>
               <input
-                className='w-full rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white placeholder:text-white/20 text-sm'
+                className='w-full rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white placeholder:text-dark_black/40 dark:placeholder:text-white/20 text-sm'
                 id='company'
                 type='text'
                 name='company'
@@ -136,11 +136,11 @@ function ContactForm() {
           {/* Row 2: Email & Phone */}
           <div className='grid md:grid-cols-2 gap-6'>
             <div className='flex flex-col gap-2'>
-              <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='email'>
+              <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='email'>
                 {t('labels.email')}
               </label>
               <input
-                className='w-full rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white placeholder:text-white/20 text-sm'
+                className='w-full rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white placeholder:text-dark_black/40 dark:placeholder:text-white/20 text-sm'
                 id='email'
                 type='email'
                 name='email'
@@ -151,11 +151,11 @@ function ContactForm() {
               />
             </div>
             <div className='flex flex-col gap-2'>
-              <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='phone'>
+              <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='phone'>
                 {t('labels.phone')}
               </label>
               <input
-                className='w-full rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white placeholder:text-white/20 text-sm'
+                className='w-full rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white placeholder:text-dark_black/40 dark:placeholder:text-white/20 text-sm'
                 id='phone'
                 type='tel'
                 name='phone'
@@ -168,12 +168,12 @@ function ContactForm() {
 
           {/* Row 3: Subject */}
           <div className='flex flex-col gap-2'>
-            <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='subject'>
+            <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='subject'>
               {t('labels.subject')}
             </label>
             <div className='relative'>
               <select
-                className='w-full appearance-none rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white text-sm'
+                className='w-full appearance-none rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white text-sm'
                 name='subject'
                 id='subject'
                 value={formData.subject}
@@ -184,17 +184,17 @@ function ContactForm() {
                 <option className='bg-dark_black' value='press'>{t('subjects.press')}</option>
                 <option className='bg-dark_black' value='other'>{t('subjects.other')}</option>
               </select>
-              <Icon icon="ph:caret-down-bold" className="absolute right-5 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none" />
+              <Icon icon="ph:caret-down-bold" className="absolute right-5 top-1/2 -translate-y-1/2 text-dark_black/30 dark:text-white/30 pointer-events-none" />
             </div>
           </div>
 
           {/* Row 4: Message */}
           <div className='flex flex-col gap-2'>
-            <label className='text-xs font-bold uppercase tracking-wider text-white/50 px-2' htmlFor='message'>
+            <label className='text-xs font-bold uppercase tracking-wider text-dark_black/60 dark:text-white/50 px-2' htmlFor='message'>
               {t('labels.message')}
             </label>
             <textarea
-              className='w-full rounded-xl border border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-white placeholder:text-white/20 text-sm'
+              className='w-full rounded-xl border border-dark_black/10 dark:border-white/10 px-5 py-3 outline-hidden transition focus:border-brand-yellow/50 bg-white/5 text-dark_black dark:text-white placeholder:text-dark_black/40 dark:placeholder:text-white/20 text-sm'
               name='message'
               id='message'
               required
@@ -213,9 +213,9 @@ function ContactForm() {
                 name="consent"
                 checked={formData.consent}
                 onChange={handleChange}
-                className="w-5 h-5 rounded border-white/20 bg-white/5 text-brand-yellow focus:ring-brand-yellow focus:ring-offset-0 transition-colors"
+                className="w-5 h-5 rounded border-dark_black/20 dark:border-white/20 bg-white/5 text-brand-yellow focus:ring-brand-yellow focus:ring-offset-0 transition-colors"
               />
-              <span className="text-xs text-white/60 group-hover:text-white/80 transition-colors">
+              <span className="text-xs text-dark_black/60 dark:text-white/60 group-hover:text-dark_black/80 dark:group-hover:text-white/80 transition-colors">
                 {t('labels.consent')}
               </span>
             </label>

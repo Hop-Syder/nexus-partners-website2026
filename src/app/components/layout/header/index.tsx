@@ -54,13 +54,13 @@ function Header() {
         <div className='container px-1 md:p-3'>
           <nav
             className={`flex items-center py-3 px-2 md:px-4 justify-between max-lg:justify-around ${sticky
-              ? ' rounded-full shadow-sm bg-white dark:bg-dark_black'
+              ? ' rounded-2xl shadow-sm bg-white dark:bg-dark_black'
               : null
               } `}>
             <div className='flex items-center shrink-0'>
               <Logo />
             </div>
-            <div className='hidden lg:flex bg-dark_black/5 dark:bg-white/5 rounded-3xl p-3'>
+            <div className='hidden lg:flex bg-dark_black/5 dark:bg-white/5 rounded-2xl p-3'>
               <ul className='flex gap-0 2xl:gap-1.5'>
                 {menuData?.map((item, index) => (
                   <HeaderLink key={index} item={item} />
@@ -76,7 +76,7 @@ function Header() {
 
               {/* ---------------------CTA Button-------------------- */}
               <Link
-                href="/contact"
+                href="https://forms.office.com/r/3FWqQ2n2YT"
                 className="hidden md:flex items-center justify-center px-4 py-2 bg-brand-yellow text-dark_black rounded-full text-xs md:text-sm font-medium hover:bg-opacity-90 transition-all duration-200 shrink-0"
               >
                 {t('cta')}
@@ -146,7 +146,7 @@ function Header() {
             </ul>
             <div className='mt-8'>
               <Link
-                href="/contact"
+                href="https://forms.office.com/r/3FWqQ2n2YT"
                 onClick={() => setSidebarOpen(false)}
                 className="flex items-center justify-center w-full py-4 bg-brand-yellow text-dark_black rounded-xl font-medium shadow-lg hover:bg-opacity-90 transition-all"
               >

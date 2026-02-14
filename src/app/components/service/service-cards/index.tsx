@@ -25,29 +25,25 @@ const ServiceCards = () => {
             key: 'web',
             icon: 'ph:browser-bold',
             color: 'text-purple_blue',
-            bgColor: 'bg-gradient-to-br from-purple_blue/10 to-purple_blue/5',
-            span: 'md:col-span-2 md:row-span-2' // Featured large card
+            bgColor: 'bg-gradient-to-br from-purple_blue/10 to-purple_blue/5'
         },
         {
             key: 'seo',
             icon: 'ph:magnifying-glass-plus-bold',
             color: 'text-green',
-            bgColor: 'bg-gradient-to-br from-green/10 to-green/5',
-            span: 'md:col-span-1 md:row-span-1'
+            bgColor: 'bg-gradient-to-br from-green/10 to-green/5'
         },
         {
             key: 'automation',
             icon: 'ph:whatsapp-logo-bold',
             color: 'text-blue',
-            bgColor: 'bg-gradient-to-br from-blue/10 to-blue/5',
-            span: 'md:col-span-1 md:row-span-1'
+            bgColor: 'bg-gradient-to-br from-blue/10 to-blue/5'
         },
         {
             key: 'ai',
             icon: 'ph:brain-bold',
             color: 'text-pale-yellow',
-            bgColor: 'bg-gradient-to-br from-pale-yellow/10 to-pale-yellow/5',
-            span: 'md:col-span-1 md:row-span-1'
+            bgColor: 'bg-gradient-to-br from-pale-yellow/10 to-pale-yellow/5'
         }
     ]
 
@@ -63,11 +59,11 @@ const ServiceCards = () => {
                     </h2>
                 </motion.div>
 
-                <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 md:auto-rows-[280px] gap-6 max-w-7xl mx-auto">
+                <div ref={ref} className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto">
                     {services.map((service, idx) => (
                         <motion.div
                             key={service.key}
-                            className={`${service.span} ${service.bgColor} flex flex-col p-8 md:p-10 rounded-[2.5rem] gap-6 border border-dark_black/5 dark:border-white/5 hover:border-pale-yellow hover:shadow-2xl hover:shadow-pale-yellow/10 transition-all duration-500 group relative overflow-hidden`}
+                            className={`w-full md:flex-1 md:min-w-0 min-h-[280px] ${service.bgColor} flex flex-col p-8 md:p-10 rounded-[2.5rem] gap-6 border border-dark_black/5 dark:border-white/5 hover:border-pale-yellow hover:shadow-2xl hover:shadow-pale-yellow/10 transition-all duration-500 group relative overflow-hidden`}
                             initial={{ scale: 1.2, opacity: 0, filter: 'blur(8px)' }}
                             animate={inView ? { scale: 1, opacity: 1, filter: 'blur(0px)' } : {}}
                             transition={{ duration: 0.6, delay: 0.3 + idx * 0.2, ease: 'easeInOut' }}

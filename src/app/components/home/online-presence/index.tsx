@@ -5,13 +5,57 @@ import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'motion/react'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
-import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl'
+
+/** Parse la description projet en intro + sections Framework & Fonctionnalités */
+function parseProjectDescription(description: string): {
+  intro: string
+  frameworkTitle: string
+  frameworkItems: string[]
+  featuresTitle: string
+  featuresItems: string[]
+} {
+  const blocks = description.split(/\n\n+/)
+  let intro = ''
+  let frameworkTitle = 'Framework & stack utilisés'
+  let frameworkItems: string[] = []
+  let featuresTitle = 'Fonctionnalités intégrées'
+  let featuresItems: string[] = []
+
+  const extractList = (text: string): string[] =>
+    text.split(/\n/).filter((line) => line.trim().startsWith('•')).map((line) => line.replace(/^•\s*/, '').trim())
+
+  for (const block of blocks) {
+    const trimmed = block.trim()
+    if (!trimmed) continue
+    if (trimmed.toLowerCase().includes('framework') && trimmed.toLowerCase().includes('stack')) {
+      const [first, ...rest] = trimmed.split(/\n/)
+      frameworkTitle = first.replace(/\s*:\s*$/, '')
+      frameworkItems = extractList(trimmed)
+      if (frameworkItems.length === 0) frameworkItems = rest.filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
+    } else if (trimmed.toLowerCase().includes('fonctionnalités')) {
+      const [first, ...rest] = trimmed.split(/\n/)
+      featuresTitle = first.replace(/\s*:\s*$/, '')
+      featuresItems = extractList(trimmed)
+      if (featuresItems.length === 0) featuresItems = rest.filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
+    } else if (!frameworkItems.length && !featuresItems.length) {
+      intro = intro ? `${intro}\n\n${trimmed}` : trimmed
+    }
+  }
+
+  if (!intro && blocks.length > 0) {
+    const first = blocks[0].trim()
+    if (!first.toLowerCase().includes('framework') && !first.toLowerCase().includes('fonctionnalités')) intro = first
+  }
+  return { intro, frameworkTitle, frameworkItems, featuresTitle, featuresItems }
+}
 
 function NosProjets() {
   const t = useTranslations('NosProjets');
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
   const [NosProjetsList, setNosProjetsList] = useState<any>(null)
+  const [modalProjectIndex, setModalProjectIndex] = useState<number | null>(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,6 +71,16 @@ function NosProjets() {
     }
     fetchData()
   }, [])
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setModalProjectIndex(null)
+    }
+    if (modalProjectIndex !== null) {
+      document.addEventListener('keydown', handleEscape)
+      return () => document.removeEventListener('keydown', handleEscape)
+    }
+  }, [modalProjectIndex])
 
   const bottomAnimation = (index: number) => ({
     initial: { y: 50, opacity: 0 },
@@ -82,11 +136,26 @@ function NosProjets() {
                       </Link>
                     </div>
 
-                    <div className='flex items-center justify-between gap-4 w-full'>
+                    {/* Desktop: h3, bouton Plus, tags sur une ligne | Mobile: ligne 1 = h3, ligne 2 = bouton + tags */}
+                    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 w-full'>
                       <h3 className='group-hover:text-purple_blue text-2xl font-bold transition-colors'>
                         {t(`tags.${items.title}`)}
                       </h3>
-                      <div className='flex gap-3 flex-wrap'>
+                      <div className='flex flex-wrap items-center gap-3'>
+                        {items.description && (
+                          <button
+                            type='button'
+                            aria-label='Voir les détails du projet'
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              setModalProjectIndex(index)
+                            }}
+                            className='text-xs font-semibold flex items-center gap-1.5 px-4 py-2 rounded-full border border-dark_black/10 dark:border-white/20 bg-white/40 dark:bg-white/5 hover:bg-brand-yellow hover:text-dark_black hover:border-brand-yellow transition-all duration-300'
+                          >
+                            Plus
+                            <Icon icon='tabler:plus' width='14' height='14' />
+                          </button>
+                        )}
                         {items.tag?.map((tag: any, idx: number) => (
                           <p
                             key={idx}
@@ -97,6 +166,111 @@ function NosProjets() {
                         ))}
                       </div>
                     </div>
+
+                    {/* Popup détails projet */}
+                    {modalProjectIndex === index && items.description && (() => {
+                      const parsed = parseProjectDescription(items.description)
+                      return (
+                        <div
+                          className='fixed inset-0 z-50 flex items-center justify-center p-4'
+                          role='dialog'
+                          aria-modal='true'
+                          aria-labelledby='project-detail-title'
+                        >
+                          <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className='absolute inset-0 bg-dark_black/70 dark:bg-black/60 backdrop-blur-md'
+                            onClick={() => setModalProjectIndex(null)}
+                            aria-hidden='true'
+                          />
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0.96, y: 12 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                            className='relative z-10 w-full max-w-2xl max-h-[90vh] overflow-hidden rounded-3xl border border-dark_black/10 dark:border-white/10 bg-white dark:bg-dark_black shadow-2xl dark:shadow-none flex flex-col'
+                          >
+                            {/* En-tête avec accent */}
+                            <div className='relative flex items-start justify-between gap-4 p-5 md:p-6 bg-linear-to-br from-purple_blue/15 via-blue/10 to-green/10 dark:from-purple_blue/20 dark:via-blue/15 dark:to-green/15 border-b border-dark_black/5 dark:border-white/10'>
+                              <div className='min-w-0 flex-1'>
+                                <span className='text-xs font-semibold tracking-[0.2em] uppercase text-purple_blue dark:text-brand-yellow mb-1 block'>
+                                  Détails du projet
+                                </span>
+                                <h3 id='project-detail-title' className='text-xl md:text-2xl font-bold text-dark_black dark:text-white'>
+                                  {t(`tags.${items.title}`)}
+                                </h3>
+                              </div>
+                              <button
+                                type='button'
+                                aria-label='Fermer'
+                                onClick={(e) => { e.stopPropagation(); setModalProjectIndex(null) }}
+                                className='shrink-0 p-2.5 rounded-xl border border-dark_black/10 dark:border-white/20 hover:bg-brand-yellow hover:border-brand-yellow hover:text-dark_black transition-all'
+                              >
+                                <Icon icon='tabler:x' width='22' height='22' />
+                              </button>
+                            </div>
+
+                            <div className='p-5 md:p-6 overflow-y-auto'>
+                              {parsed.intro && (
+                                <p className='text-base text-dark_black/85 dark:text-white/85 leading-relaxed' style={{ marginBottom: '2rem' }}>
+                                  {parsed.intro}
+                                </p>
+                              )}
+
+                              {parsed.frameworkItems.length > 0 && (
+                                <div className='rounded-2xl border border-dark_black/10 dark:border-white/10 bg-white/50 dark:bg-white/5 p-4 md:p-5' style={{ marginBottom: '2rem' }}>
+                                  <div className='flex items-center gap-2 mb-4'>
+                                    <span className='flex items-center justify-center w-9 h-9 rounded-xl bg-purple_blue/15 dark:bg-purple_blue/25 text-purple_blue'>
+                                      <Icon icon='tabler:code' width='20' height='20' />
+                                    </span>
+                                    <h4 className='text-sm font-bold uppercase tracking-wider text-dark_black dark:text-white'>
+                                      {parsed.frameworkTitle}
+                                    </h4>
+                                  </div>
+                                  <ul className='list-none p-0 m-0'>
+                                    {parsed.frameworkItems.map((item, i) => (
+                                      <li
+                                        key={i}
+                                        className='flex gap-3 text-sm text-dark_black/80 dark:text-white/80'
+                                        style={{ marginBottom: i < parsed.frameworkItems.length - 1 ? '1.25rem' : 0 }}
+                                      >
+                                        <span className='text-brand-yellow mt-1 shrink-0' aria-hidden>•</span>
+                                        <span className='leading-relaxed'>{item}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {parsed.featuresItems.length > 0 && (
+                                <div className='rounded-2xl border border-dark_black/10 dark:border-white/10 bg-white/50 dark:bg-white/5 p-4 md:p-5' style={{ marginBottom: 0 }}>
+                                  <div className='flex items-center gap-2 mb-4'>
+                                    <span className='flex items-center justify-center w-9 h-9 rounded-xl bg-green/15 dark:bg-green/25 text-green'>
+                                      <Icon icon='tabler:tool' width='20' height='20' />
+                                    </span>
+                                    <h4 className='text-sm font-bold uppercase tracking-wider text-dark_black dark:text-white'>
+                                      {parsed.featuresTitle}
+                                    </h4>
+                                  </div>
+                                  <ul className='list-none p-0 m-0'>
+                                    {parsed.featuresItems.map((item, i) => (
+                                      <li
+                                        key={i}
+                                        className='flex gap-3 text-sm text-dark_black/80 dark:text-white/80'
+                                        style={{ marginBottom: i < parsed.featuresItems.length - 1 ? '1.25rem' : 0 }}
+                                      >
+                                        <span className='text-brand-yellow mt-1 shrink-0' aria-hidden>•</span>
+                                        <span className='leading-relaxed'>{item}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                            </div>
+                          </motion.div>
+                        </div>
+                      )
+                    })()}
                   </motion.div>
                 ))}
               </div>
