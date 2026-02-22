@@ -13,6 +13,7 @@ import { motion } from 'motion/react'
 import { Link } from '@/i18n/routing'
 import { Icon } from '@iconify/react'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
+import Magnetic from '@/app/components/ui/magnetic'
 
 const ServiceHero = () => {
     const t = useTranslations('Services.Hero')
@@ -31,10 +32,10 @@ const ServiceHero = () => {
                         {/* Heading text avec TextGenerateEffect */}
                         <div className='relative flex flex-col text-center items-center gap-4'>
                             <h1>
-                                <TextGenerateEffect words="Nos Services :" />
+                                <TextGenerateEffect words={t('title1')} />
                                 <br />
                                 <TextGenerateEffect
-                                    words="Du Digital qui Vend Vraiment"
+                                    words={t('title2')}
                                     delay={0.8}
                                     className="italic font-normal instrument-font"
                                 />
@@ -48,16 +49,18 @@ const ServiceHero = () => {
                             {...bottomAnimation}
                             className='flex flex-col items-center justify-center gap-4'
                         >
-                            <Link
-                                href='/contact'
-                                className='group relative inline-flex items-center justify-center px-12 py-6 bg-gradient-to-r from-pale-yellow via-pale-yellow to-orange text-dark_black rounded-full font-bold text-lg overflow-hidden transition-all hover:shadow-[0_0_50px_rgba(255,193,7,0.5)] hover:scale-105'
-                            >
-                                <span className="relative z-10 flex items-center gap-3">
-                                    {t('cta')}
-                                    <Icon icon="ph:arrow-right-bold" className="transition-transform group-hover:translate-x-2 text-2xl" />
-                                </span>
-                                <div className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-500"></div>
-                            </Link>
+                            <Magnetic>
+                                <Link
+                                    href='/contact'
+                                    className='group relative inline-flex items-center justify-center px-12 py-6 bg-gradient-to-r from-pale-yellow via-pale-yellow to-orange text-dark_black rounded-full font-bold text-lg overflow-hidden transition-all hover:shadow-[0_0_50px_rgba(255,193,7,0.5)]'
+                                >
+                                    <span className="relative z-10 flex items-center gap-3">
+                                        {t('cta')}
+                                        <Icon icon="ph:arrow-right-bold" className="transition-transform group-hover:translate-x-2 text-2xl" />
+                                    </span>
+                                    <div className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-500"></div>
+                                </Link>
+                            </Magnetic>
                         </motion.div>
                     </div>
                 </div>

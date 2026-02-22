@@ -290,7 +290,8 @@
 
   "Services": {
     "Hero": {
-      "title": "Nos Services : Du Digital qui Vend Vraiment",
+      "title1": "Nos Services :",
+      "title2": "Du Digital qui Vend Vraiment",
       "subtitle": "Chez Nexus Partners, nous offrons des solutions simples pour booster vos clients et ventes locales – sans complications.",
       "cta": "Découvrez votre solution idéale"
     },

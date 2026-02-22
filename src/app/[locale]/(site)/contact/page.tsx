@@ -3,6 +3,8 @@ import ContactForm from "@/app/components/contact-form";
 import Faq from "@/app/components/service/faq";
 import { Icon } from '@iconify/react';
 import { useTranslations } from 'next-intl';
+import { motion } from 'motion/react';
+import Magnetic from '@/app/components/ui/magnetic';
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect';
 import Link from 'next/link';
 
@@ -118,12 +120,60 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Map Placeholder Section */}
-            <section className="w-full h-[400px] bg-dark_black/5 dark:bg-white/5 relative overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
-                <div className="bg-white dark:bg-dark_black px-8 py-4 rounded-full shadow-2xl z-10 flex items-center gap-3">
-                    <Icon icon="ph:map-pin-fill" className="text-brand-yellow text-2xl" />
-                    <span className="font-bold text-lg">Cotonou, Bénin</span>
+            {/* Map Section - Pro Max Design */}
+            <section className="container max-w-7xl mx-auto px-4 pb-24">
+                <div className="relative w-full h-[500px] rounded-[3rem] overflow-hidden border border-dark_black/10 dark:border-white/10 shadow-2xl group">
+                    {/* Google Map Iframe with Dark filter overlay */}
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15858.8315132649!2d2.410188739501953!3d6.354146099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355938569c73b%3A0xe447781b47781b4!2sHaie%20Vive%2C%20Cotonou!5e0!3m2!1sfr!2sbj!4v1700000000000!5m2!1sfr!2sbj"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2) brightness(0.9)' }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="dark:opacity-80 transition-opacity duration-500"
+                    ></iframe>
+
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-dark_black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+
+                    {/* Floating Location Card */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="absolute top-8 left-8 p-6 bg-white/10 dark:bg-dark_black/40 backdrop-blur-xl border border-white/20 dark:border-white/10 rounded-3xl shadow-2xl max-w-xs z-20"
+                    >
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="size-10 rounded-full bg-brand-yellow flex items-center justify-center shrink-0">
+                                <Icon icon="ph:map-pin-fill" className="text-dark_black text-xl" />
+                            </div>
+                            <div>
+                                <h4 className="font-bold text-white">Nexus Partners</h4>
+                                <p className="text-xs text-white/60">Quartier Haie Vive, Cotonou</p>
+                            </div>
+                        </div>
+
+                        <p className="text-sm text-white/80 mb-6">
+                            Venez nous rencontrer pour discuter de votre prochain projet ambitieux.
+                        </p>
+
+                        <Magnetic>
+                            <a
+                                href="https://goo.gl/maps/YOUR_LINK_HERE"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full py-3 bg-brand-yellow rounded-xl text-dark_black font-bold text-sm flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-brand-yellow/20 transition-all"
+                            >
+                                <Icon icon="ph:navigation-arrow-fill" />
+                                Itinéraire
+                            </a>
+                        </Magnetic>
+                    </motion.div>
+
+                    {/* Gradient decorations inside map frame */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/5 blur-[100px] pointer-events-none" />
                 </div>
             </section>
 

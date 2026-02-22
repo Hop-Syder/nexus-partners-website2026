@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'motion/react'
 import { useTranslations } from 'next-intl'
+import Magnetic from '../ui/magnetic'
 
 function ContactForm() {
   const t = useTranslations('ContactForm');
@@ -80,16 +81,18 @@ function ContactForm() {
           </p>
         </div>
 
-        <Link
-          href='/'
-          className='group w-fit text-dark_black font-bold bg-brand-yellow rounded-full flex items-center gap-4 py-3 pl-6 pr-3 hover:bg-transparent border border-brand-yellow transition-all duration-300 hover:text-brand-yellow shadow-xl hover:shadow-brand-yellow/20'>
-          <span className='group-hover:translate-x-9 transform transition-transform duration-300 ease-in-out'>
-            {t('success.cta')}
-          </span>
-          <div className='bg-white rounded-full p-2 group-hover:bg-brand-yellow transition-colors duration-300'>
-            <Icon icon="ph:arrow-right-bold" className="text-xl text-dark_black" />
-          </div>
-        </Link>
+        <Magnetic>
+          <Link
+            href='/'
+            className='group w-fit text-dark_black font-bold bg-brand-yellow rounded-full flex items-center gap-4 py-3 pl-6 pr-3 hover:bg-transparent border border-brand-yellow transition-all duration-300 hover:text-brand-yellow shadow-xl hover:shadow-brand-yellow/20'>
+            <span className='group-hover:translate-x-9 transform transition-transform duration-300 ease-in-out'>
+              {t('success.cta')}
+            </span>
+            <div className='bg-white rounded-full p-2 group-hover:bg-brand-yellow transition-colors duration-300'>
+              <Icon icon="ph:arrow-right-bold" className="text-xl text-dark_black" />
+            </div>
+          </Link>
+        </Magnetic>
       </motion.div>
     )
   }
@@ -221,24 +224,26 @@ function ContactForm() {
             </label>
 
             {!loader ? (
-              <button
-                type='submit'
-                disabled={!formData.consent}
-                className={`group w-full text-dark_black font-bold bg-brand-yellow rounded-full flex items-center justify-between py-3 pl-6 pr-2 transition-all duration-300 ease-in-out border border-brand-yellow shadow-xl hover:shadow-brand-yellow/20 ${!formData.consent ? 'opacity-50 cursor-not-allowed' : 'hover:bg-transparent hover:text-brand-yellow'}`}>
-                <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
-                  {t('submit')}
-                </span>
-                <div className={`bg-white rounded-full p-2 transition-colors duration-300 ${formData.consent ? 'group-hover:bg-brand-yellow' : ''}`}>
-                  <Icon
-                    icon="ph:paper-plane-tilt-bold"
-                    className={`text-xl text-dark_black transform transition-all duration-500 ${formData.consent ? 'group-hover:-translate-x-[180px] group-hover:rotate-12 group-hover:opacity-0' : ''}`}
-                  />
-                  <Icon
-                    icon="ph:paper-plane-tilt-bold"
-                    className="text-xl text-dark_black absolute opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  />
-                </div>
-              </button>
+              <Magnetic>
+                <button
+                  type='submit'
+                  disabled={!formData.consent}
+                  className={`group w-full text-dark_black font-bold bg-brand-yellow rounded-full flex items-center justify-between py-3 pl-6 pr-2 transition-all duration-300 ease-in-out border border-brand-yellow shadow-xl hover:shadow-brand-yellow/20 ${!formData.consent ? 'opacity-50 cursor-not-allowed' : 'hover:bg-transparent hover:text-brand-yellow'}`}>
+                  <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+                    {t('submit')}
+                  </span>
+                  <div className={`bg-white rounded-full p-2 transition-colors duration-300 ${formData.consent ? 'group-hover:bg-brand-yellow' : ''}`}>
+                    <Icon
+                      icon="ph:paper-plane-tilt-bold"
+                      className={`text-xl text-dark_black transform transition-all duration-500 ${formData.consent ? 'group-hover:-translate-x-[180px] group-hover:rotate-12 group-hover:opacity-0' : ''}`}
+                    />
+                    <Icon
+                      icon="ph:paper-plane-tilt-bold"
+                      className="text-xl text-dark_black absolute opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    />
+                  </div>
+                </button>
+              </Magnetic>
             ) : (
               <button disabled className='w-full bg-brand-yellow/50 text-dark_black font-bold py-3.5 rounded-full flex items-center justify-center gap-3 cursor-not-allowed'>
                 <div className='animate-spin size-5 border-[2px] border-dark_black border-t-transparent rounded-full' />

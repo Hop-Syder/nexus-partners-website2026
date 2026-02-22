@@ -14,6 +14,7 @@ import { Link } from '@/i18n/routing'
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
+import Magnetic from '@/app/components/ui/magnetic'
 
 const Hero = () => {
     const t = useTranslations('About')
@@ -76,23 +77,27 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="flex flex-col sm:flex-row gap-4 items-center"
                     >
-                        <Link
-                            href='/contact'
-                            className='group relative inline-flex items-center justify-center px-10 py-5 bg-brand-yellow text-dark_black rounded-full font-bold overflow-hidden transition-all hover:shadow-[0_0_40px_rgba(255,204,0,0.3)]'
-                        >
-                            <span className="relative z-10 flex items-center gap-2">
-                                Découvrir nos solutions
-                                <Icon icon="ph:arrow-right-bold" className="transition-transform group-hover:translate-x-1" />
-                            </span>
-                            <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[0%] transition-transform duration-500 ease-in-out"></div>
-                        </Link>
+                        <Magnetic>
+                            <Link
+                                href='/contact'
+                                className='group relative inline-flex items-center justify-center px-10 py-5 bg-brand-yellow text-dark_black rounded-full font-bold overflow-hidden transition-all hover:shadow-[0_0_40px_rgba(255,204,0,0.3)]'
+                            >
+                                <span className="relative z-10 flex items-center gap-2">
+                                    Découvrir nos solutions
+                                    <Icon icon="ph:arrow-right-bold" className="transition-transform group-hover:translate-x-1" />
+                                </span>
+                                <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[0%] transition-transform duration-500 ease-in-out"></div>
+                            </Link>
+                        </Magnetic>
 
-                        <Link
-                            href='/work'
-                            className='px-10 py-5 rounded-full font-bold text-dark_black dark:text-white border border-dark_black/10 dark:border-white/10 hover:bg-dark_black/5 dark:hover:bg-white/5 transition-all'
-                        >
-                            Voir nos réalisations
-                        </Link>
+                        <Magnetic>
+                            <Link
+                                href='/work'
+                                className='px-10 py-5 rounded-full font-bold text-dark_black dark:text-white border border-dark_black/10 dark:border-white/10 hover:bg-dark_black/5 dark:hover:bg-white/5 transition-all'
+                            >
+                                Voir nos réalisations
+                            </Link>
+                        </Magnetic>
                     </motion.div>
                 </div>
             </div>

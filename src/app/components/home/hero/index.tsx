@@ -6,6 +6,7 @@ import { motion } from 'motion/react'
 import StarRating from '../../shared/star-rating'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
 import { useTranslations } from 'next-intl';
+import Magnetic from '../../ui/magnetic';
 
 function HeroSection() {
   const t = useTranslations('Hero');
@@ -60,41 +61,43 @@ function HeroSection() {
               className='flex flex-col items-center justify-center gap-8'>
               <div className='flex flex-col items-center justify-center gap-12 w-full sm:flex-row'>
                 {/* ----------- Get started Link -------------- */}
-                <Link
-                  href='/contact'
-                  className='group bg-brand-yellow text-dark_black font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-full md:py-3 border border-brand-yellow transition-all duration-200 ease-in-out hover:bg-transparent hover:text-brand-yellow'>
-                  <span className='flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-28'>
-                    {t('cta')}
-                  </span>
-                  <svg
-                    width='40'
-                    height='40'
-                    viewBox='0 0 40 40'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='transform transition-transform duration-200 ease-in-out group-hover:-translate-x-44 group-hover:rotate-45'>
-                    <rect
+                <Magnetic>
+                  <Link
+                    href='/contact'
+                    className='group bg-brand-yellow text-dark_black font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-full md:py-3 border border-brand-yellow transition-all duration-200 ease-in-out hover:bg-transparent hover:text-brand-yellow'>
+                    <span className='flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-28'>
+                      {t('cta')}
+                    </span>
+                    <svg
                       width='40'
                       height='40'
-                      rx='20'
-                      className='fill-white transition-colors duration-200 ease-in-out group-hover:fill-brand-yellow'
-                    />
-                    <path
-                      d='M15.832 15.3334H24.1654V23.6667'
-                      className='stroke-[#1B1D1E] transition-colors duration-200 ease-in-out group-hover:stroke-white'
-                      strokeWidth='1.66667'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    />
-                    <path
-                      d='M15.832 23.6667L24.1654 15.3334'
-                      className='stroke-[#1B1D1E] transition-colors duration-500 ease-in-out group-hover:stroke-white'
-                      strokeWidth='1.66667'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    />
-                  </svg>
-                </Link>
+                      viewBox='0 0 40 40'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='transform transition-transform duration-200 ease-in-out group-hover:-translate-x-44 group-hover:rotate-45'>
+                      <rect
+                        width='40'
+                        height='40'
+                        rx='20'
+                        className='fill-white transition-colors duration-200 ease-in-out group-hover:fill-brand-yellow'
+                      />
+                      <path
+                        d='M15.832 15.3334H24.1654V23.6667'
+                        className='stroke-[#1B1D1E] transition-colors duration-200 ease-in-out group-hover:stroke-white'
+                        strokeWidth='1.66667'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                      <path
+                        d='M15.832 23.6667L24.1654 15.3334'
+                        className='stroke-[#1B1D1E] transition-colors duration-500 ease-in-out group-hover:stroke-white'
+                        strokeWidth='1.66667'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                    </svg>
+                  </Link>
+                </Magnetic>
 
                 {/* --------------- avatar division -------------- */}
                 <div className='flex items-center gap-7'>
@@ -103,11 +106,11 @@ function HeroSection() {
                       <li key={index} className='-mr-2 z-1 avatar-hover:ml-2'>
                         <Image
                           src={items.image}
-                          alt='Image'
+                          alt={items.name || 'Client Avatar'}
                           width={44}
                           height={44}
                           quality={100}
-                          className='rounded-full border-2 border-white'
+                          className='rounded-full border-2 border-white transition-transform duration-200 hover:scale-110 hover:z-10'
                         />
                       </li>
                     ))}

@@ -9,6 +9,7 @@ import MobileHeader from './Navigation/MobileHeader'
 import ThemeToggler from './ThemeToggle'
 import LanguageSwitcher from '../language-switcher'
 import { useTranslations } from 'next-intl';
+import Magnetic from '../../ui/magnetic';
 
 function Header() {
   const t = useTranslations('Layout.header');
@@ -75,17 +76,20 @@ function Header() {
               <ThemeToggler />
 
               {/* ---------------------CTA Button-------------------- */}
-              <Link
-                href="https://forms.office.com/r/3FWqQ2n2YT"
-                className="hidden md:flex items-center justify-center px-4 py-2 bg-brand-yellow text-dark_black rounded-full text-xs md:text-sm font-medium hover:bg-opacity-90 transition-all duration-200 shrink-0"
-              >
-                {t('cta')}
-              </Link>
+              <Magnetic>
+                <Link
+                  href="https://forms.office.com/r/3FWqQ2n2YT"
+                  className="hidden md:flex items-center justify-center px-4 py-2 bg-brand-yellow text-dark_black rounded-full text-xs md:text-sm font-medium hover:bg-opacity-90 transition-all duration-200 shrink-0"
+                >
+                  {t('cta')}
+                </Link>
+              </Magnetic>
 
               <div className='hidden max-lg:flex'>
                 <button
                   onClick={() => setSidebarOpen(!sidebarOpen)}
                   className='p-1 transition-colors hover:text-purple_blue'
+                  aria-label='Toggle mobile menu'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

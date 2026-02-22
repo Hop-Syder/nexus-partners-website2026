@@ -338,7 +338,8 @@
   },
   "Services": {
     "Hero": {
-      "title": "Our Services: Digital That Actually Sells",
+      "title1": "Our Services:",
+      "title2": "Digital That Actually Sells",
       "subtitle": "At Nexus Partners, we offer simple solutions to boost your local customers and sales – without complications.",
       "cta": "Discover your ideal solution"
     },
