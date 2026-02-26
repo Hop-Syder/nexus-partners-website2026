@@ -129,9 +129,9 @@ export const NosProjetsList = [
     image: '/images/service/immobenin.png',
     title: 'projet-4',
     tag: ['tag-projet-4'],
-    link: '#',
+    link: 'https://template-immobenin.vercel.app/',
     description:
-      'IMMOBENIN est une plateforme immobilière de référence au Bénin, spécialisée dans l\'achat, la vente et la location de propriétés. Le site offre une interface intuitive permettant aux utilisateurs de trouver facilement le bien de leurs rêves.\\n\\nFramework & stack utilisés :\\n• HTML5, CSS3, Bootstrap 5\\n• jQuery, Owl Carousel, Wow.js\\n\\nFonctionnalités intégrées :\\n• Recherche de biens par catégorie (Maisons, Appartements, Terrains, etc.)\\n• Gestion de projets immobiliers\\n• Formulaires de contact et d\'inscription à la newsletter\\n• Témoignages clients et intégration réseaux sociaux',
+      'IMMOBENIN est une plateforme immobilière de référence au Bénin, spécialisée dans l\'achat, la vente et la location de propriétés immobilières. Le site offre une interface intuitive permettant aux utilisateurs de trouver facilement le bien de leurs rêves.\\n\\nFramework & stack utilisés :\\n• HTML5, CSS3, Bootstrap 5\\n• jQuery, Owl Carousel, Wow.js\\n\\nFonctionnalités intégrées :\\n• Recherche de biens par catégorie (Maisons, Appartements, Terrains, etc.)\\n• Gestion de projets immobiliers\\n• Formulaires de contact et d\'inscription à la newsletter\\n• Témoignages clients et intégration réseaux sociaux',
   },
 ]
 
