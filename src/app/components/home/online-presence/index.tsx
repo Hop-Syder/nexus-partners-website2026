@@ -1,3 +1,12 @@
+/**
+ * @author @hopsyder
+ * @organization Nexus Partners
+ * @description Composant affichant la liste des projets (Portfolio) avec modal de détails.
+ * @created 2026-01-07
+ * @updated 2026-02-26
+ * 🌐 ceo.nexus-partners.xyz
+ * 📧 daoudaabassichristian@gmail.com
+*/
 'use client'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'

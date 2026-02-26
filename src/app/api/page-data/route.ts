@@ -1,3 +1,12 @@
+/**
+ * @author @hopsyder
+ * @organization Nexus Partners
+ * @description API de données pour les composants de la page d'accueil et du portfolio.
+ * @created 2026-01-07
+ * @updated 2026-02-26
+ * 🌐 ceo.nexus-partners.xyz
+ * 📧 daoudaabassichristian@gmail.com
+*/
 import { NextResponse } from 'next/server'
 
 const avatarList = [
@@ -109,7 +118,22 @@ const NosProjetsList = [
     description:
       'Empreinte Finale est un site vitrine professionnel pour une agence, conçu pour renforcer la crédibilité et la visibilité locale.\n\nFramework & stack utilisés :\n• Frontend moderne (HTML5, CSS3, JavaScript)\n• Intégration CMS ou génération statique selon besoins\n• Optimisation performances et référencement\n\nFonctionnalités intégrées :\n• SEO local avancé (positionnement premier sur Google Maps)\n• Mise en avant des services et de l’équipe\n• Design professionnel et responsive\n• Formulaires de contact et prise de rendez-vous',
   },
-
+  {
+    image: '/images/service/abvelt.png',
+    title: 'projet-3',
+    tag: ['tag-projet-3'],
+    link: '#',
+    description:
+      'Abvelt est un template moderne de site vitrine conçu pour les entreprises, agences et cabinets de services. Il offre une structure professionnelle complète avec des sections dédiées aux services, au portfolio et aux témoignages clients.\n\nFramework & stack utilisés :\n• HTML5, CSS3, JavaScript ES6\n• Animations fluides et responsive design\n\nFonctionnalités intégrées :\n• Navigation optimisée et Hero Banner avec CTA\n• Grilles de services interactives\n• Portfolio filtrable et formulaire de contact\n• Footer complet avec réseaux sociaux',
+  },
+  {
+    image: '/images/service/immobenin.png',
+    title: 'projet-4',
+    tag: ['tag-projet-4'],
+    link: '#',
+    description:
+      'IMMOBENIN est une plateforme immobilière de référence au Bénin, spécialisée dans l\'achat, la vente et la location de propriétés. Le site offre une interface intuitive permettant aux utilisateurs de trouver facilement le bien de leurs rêves.\n\nFramework & stack utilisés :\n• HTML5, CSS3, Bootstrap 5\n• jQuery, Owl Carousel, Wow.js\n\nFonctionnalités intégrées :\n• Recherche de biens par catégorie (Maisons, Appartements, Terrains, etc.)\n• Gestion de projets immobiliers\n• Formulaires de contact et d\'inscription à la newsletter\n• Témoignages clients et intégration réseaux sociaux',
+  },
 ]
 
 const creativeMindList = [
