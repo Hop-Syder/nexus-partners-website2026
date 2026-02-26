@@ -8,25 +8,10 @@ import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
 import { useTranslations } from 'next-intl';
 import Magnetic from '../../ui/magnetic';
 
-function HeroSection() {
+function HeroSection({ data }: { data: any }) {
   const t = useTranslations('Hero');
   const ref = useRef(null)
-  const [avatarList, setAvatarList] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setAvatarList(data)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-
-    fetchData()
-  }, [])
+  const avatarList = data;
 
   const bottomAnimation = {
     initial: { y: '20%', opacity: 0 },
@@ -110,6 +95,7 @@ function HeroSection() {
                           width={44}
                           height={44}
                           quality={100}
+                          priority={index === 0}
                           className='rounded-full border-2 border-white transition-transform duration-200 hover:scale-110 hover:z-10'
                         />
                       </li>

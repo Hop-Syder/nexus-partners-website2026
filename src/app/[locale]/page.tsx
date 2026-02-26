@@ -9,12 +9,13 @@ import Solutions from "../components/home/solution";
 import WebResult from "../components/home/web-result";
 
 
+import { avatarList, NosProjetsList } from "@/data/page-data";
 
 export default function Home() {
   return (
     <main>
       {/* ---------------------Hero section Starts-----------------  */}
-      <HeroSection />
+      <HeroSection data={{ avatarList }} />
       {/* ---------------------Hero section Ends-----------------  */}
 
       {/* ---------------------Brand logo section Starts-----------------  */}
@@ -30,7 +31,7 @@ export default function Home() {
       {/* ---------------------Innovation section Ends-----------------  */}
 
       {/* ---------------------Online presence section Starts-----------------  */}
-      <NosProjets />
+      <NosProjets data={NosProjetsList} />
       {/* ---------------------Online presence section Ends-----------------  */}
 
       {/* ---------------------Creative mind section Starts-----------------  */}

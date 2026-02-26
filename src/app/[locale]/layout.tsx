@@ -10,6 +10,21 @@ import type { Metadata } from 'next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Script from 'next/script';
+import { Inter_Tight, Instrument_Serif } from 'next/font/google';
+
+const interTight = Inter_Tight({
+  subsets: ['latin'],
+  variable: '--font-inter-tight',
+  display: 'swap',
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  variable: '--font-instrument-serif',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -70,7 +85,7 @@ export default async function Layout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning className={`${interTight.variable} ${instrumentSerif.variable}`}>
       <link rel="icon" href="/logo.png" sizes="any" />
       <body>
         <NextIntlClientProvider messages={messages}>

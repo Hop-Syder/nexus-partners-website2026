@@ -59,27 +59,12 @@ function parseProjectDescription(description: string): {
   return { intro, frameworkTitle, frameworkItems, featuresTitle, featuresItems }
 }
 
-function NosProjets() {
+function NosProjets({ data }: { data: any }) {
   const t = useTranslations('NosProjets');
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
-  const [NosProjetsList, setNosProjetsList] = useState<any>(null)
+  const NosProjetsList = data;
   const [modalProjectIndex, setModalProjectIndex] = useState<number | null>(null)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-
-        const data = await res.json()
-        setNosProjetsList(data?.NosProjetsList)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -127,6 +112,7 @@ function NosProjets() {
                         alt={items.title}
                         width={625}
                         height={410}
+                        priority={index === 0}
                         className='transition-transform duration-700 group-hover:scale-110'
                       />
                       <Link
