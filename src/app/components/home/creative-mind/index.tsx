@@ -6,27 +6,11 @@ import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-function CreativeMind() {
+function CreativeMind({ data }: { data: any }) {
   const t = useTranslations('CreativeMind');
   const ref = useRef(null)
   const inView = useInView(ref)
-  const [creativeMindList, setcreativeMindList] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-
-        const data = await res.json()
-        setcreativeMindList(data?.creativeMindList)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-
-    fetchData()
-  }, [])
+  const creativeMindList = data;
 
   const bottomAnimation = (index: any) => ({
     initial: { y: '5%', opacity: 0 },

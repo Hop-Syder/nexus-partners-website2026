@@ -6,30 +6,12 @@ import { useEffect, useState } from 'react'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
 import { useTranslations } from 'next-intl';
 
-function WebResult() {
+function WebResult({ data }: { data: any }) {
   const t = useTranslations('WebResult');
-  const [data, setData] = useState<any>(null);
-
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
   })
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-
-        const data = await res.json()
-        setData(data?.WebResultTagList)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-
-    fetchData()
-  }, [])
 
   return (
     <section id='aboutus' className='overflow-hidden'>

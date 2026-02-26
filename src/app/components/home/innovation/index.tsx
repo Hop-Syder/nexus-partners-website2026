@@ -6,27 +6,11 @@ import { motion, useInView } from 'motion/react'
 import { TextGenerateEffect } from '@/app/components/ui/text-generate-effect'
 import { useTranslations } from 'next-intl';
 
-function Innovation() {
+function Innovation({ data }: { data: any }) {
   const t = useTranslations('Innovation');
   const ref = useRef(null)
   const inView = useInView(ref)
-  const [innovationList, setinnovationList] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-
-        const data = await res.json()
-        setinnovationList(data?.innovationList)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-
-    fetchData()
-  }, [])
+  const innovationList = data;
 
   const bottomAnimation = (index: any) => ({
     initial: { y: '25%', opacity: 0 },

@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import NosProjets from "@/app/components/home/online-presence";
 import Innovation from "@/app/components/home/innovation";
 import Solutions from "@/app/components/home/solution";
+import { NosProjetsList, innovationList } from "@/data/page-data";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Nexus Partners",
@@ -20,10 +21,10 @@ export default function WorkPage() {
     return (
         <main className="pt-20">
             {/* Section Principale : Portfolio */}
-            <NosProjets />
+            <NosProjets data={NosProjetsList} />
 
             {/* Rappel des Services pour conversion */}
-            <Innovation />
+            <Innovation data={innovationList} />
 
             {/* CTA Final */}
             <Solutions />

@@ -9,7 +9,7 @@ import Solutions from "../components/home/solution";
 import WebResult from "../components/home/web-result";
 
 
-import { avatarList, NosProjetsList } from "@/data/page-data";
+import { avatarList, NosProjetsList, brandList, WebResultTagList, innovationList, creativeMindList } from "@/data/page-data";
 
 export default function Home() {
   return (
@@ -19,15 +19,15 @@ export default function Home() {
       {/* ---------------------Hero section Ends-----------------  */}
 
       {/* ---------------------Brand logo section Starts-----------------  */}
-      <Brand />
+      <Brand data={brandList} />
       {/* ---------------------Brand logo section Ends-----------------  */}
 
       {/* ---------------------Web result section Starts-----------------  */}
-      <WebResult />
+      <WebResult data={WebResultTagList} />
       {/* ---------------------Web result section Ends-----------------  */}
 
       {/* ---------------------Innovation section Starts-----------------  */}
-      <Innovation />
+      <Innovation data={innovationList} />
       {/* ---------------------Innovation section Ends-----------------  */}
 
       {/* ---------------------Online presence section Starts-----------------  */}
@@ -35,7 +35,7 @@ export default function Home() {
       {/* ---------------------Online presence section Ends-----------------  */}
 
       {/* ---------------------Creative mind section Starts-----------------  */}
-      <CreativeMind />
+      <CreativeMind data={creativeMindList} />
       {/* ---------------------Creative mind section Ends-----------------  */}
 
       {/* ---------------------Customer Stories section Starts-----------------  */}

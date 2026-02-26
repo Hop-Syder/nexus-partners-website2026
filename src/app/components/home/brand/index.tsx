@@ -4,23 +4,9 @@ import SingleBrand from './SingleBrand'
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-function Brand() {
+function Brand({ data }: { data: any }) {
   const t = useTranslations('Brand');
-  const [brandList, setbrandList] = useState<any>(null);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/page-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-
-        const data = await res.json()
-        setbrandList(data?.brandList || [])
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
+  const brandList = data;
 
   return (
     <section className='overflow-hidden'>
