@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     images: ['/images/logo/logo-nexuspartners.png'],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   }
 };
 
