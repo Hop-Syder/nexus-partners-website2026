@@ -3,7 +3,7 @@
  * @organization Nexus Partners
  * @description Données statiques pour les composants de la page.
  * @created 2026-02-26
- * @updated 2026-02-26
+ * @updated 2026-03-12
  * 🌐 ceo.nexus-partners.xyz
  * 📧 daoudaabassichristian@gmail.com
 */
@@ -29,29 +29,44 @@ export const avatarList = [
 
 export const brandList = [
   {
-    image: '/images/home/brand/brand-icon-1.svg',
-    darkImg: '/images/home/brand/brand-darkicon-1.svg',
-    title: 'Adobe',
+    image: '/images/confiance/anthropic.svg',
+    darkImg: '/images/confiance/anthropic.svg',
+    title: 'Anthropic',
   },
   {
-    image: '/images/home/brand/brand-icon-2.svg',
-    darkImg: '/images/home/brand/brand-darkicon-2.svg',
-    title: 'Figma',
+    image: '/images/confiance/gemini.svg',
+    darkImg: '/images/confiance/gemini.svg',
+    title: 'Gemini',
   },
   {
-    image: '/images/home/brand/brand-icon-3.svg',
-    darkImg: '/images/home/brand/brand-darkicon-3.svg',
-    title: 'Shopify',
+    image: '/images/confiance/github.svg',
+    darkImg: '/images/confiance/github.svg',
+    title: 'GitHub',
   },
   {
-    image: '/images/home/brand/brand-icon-4.svg',
-    darkImg: '/images/home/brand/brand-darkicon-4.svg',
-    title: 'Dribble',
+    image: '/images/confiance/linux.svg',
+    darkImg: '/images/confiance/linux.svg',
+    title: 'Linux',
   },
   {
-    image: '/images/home/brand/brand-icon-5.svg',
-    darkImg: '/images/home/brand/brand-darkicon-5.svg',
-    title: 'Webflow',
+    image: '/images/confiance/openai.svg',
+    darkImg: '/images/confiance/openai.svg',
+    title: 'OpenAI',
+  },
+  {
+    image: '/images/confiance/supabase.svg',
+    darkImg: '/images/confiance/supabase.svg',
+    title: 'Supabase',
+  },
+  {
+    image: '/images/confiance/vercel.svg',
+    darkImg: '/images/confiance/vercel.svg',
+    title: 'Vercel',
+  },
+  {
+    image: '/images/confiance/v0_dark.svg',
+    darkImg: '/images/confiance/v0_dark.svg',
+    title: 'V0',
   },
 ]
 

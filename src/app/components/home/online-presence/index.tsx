@@ -24,7 +24,9 @@ function parseProjectDescription(description: string): {
   featuresTitle: string
   featuresItems: string[]
 } {
-  const blocks = description.split(/\n\n+/)
+  // Remplacer les \n échappés par de vrais sauts de ligne si nécessaire
+  const flatDescription = description.replace(/\\n/g, '\n')
+  const blocks = flatDescription.split(/\n\n+/)
   let intro = ''
   let frameworkTitle = 'Framework & stack utilisés'
   let frameworkItems: string[] = []
@@ -37,25 +39,26 @@ function parseProjectDescription(description: string): {
   for (const block of blocks) {
     const trimmed = block.trim()
     if (!trimmed) continue
-    if (trimmed.toLowerCase().includes('framework') && trimmed.toLowerCase().includes('stack')) {
-      const [first, ...rest] = trimmed.split(/\n/)
-      frameworkTitle = first.replace(/\s*:\s*$/, '')
+    const lower = trimmed.toLowerCase()
+    if (lower.includes('framework') && lower.includes('stack')) {
+      const lines = trimmed.split(/\n/)
+      frameworkTitle = lines[0].replace(/\s*:\s*$/, '').trim()
       frameworkItems = extractList(trimmed)
-      if (frameworkItems.length === 0) frameworkItems = rest.filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
-    } else if (trimmed.toLowerCase().includes('fonctionnalités')) {
-      const [first, ...rest] = trimmed.split(/\n/)
-      featuresTitle = first.replace(/\s*:\s*$/, '')
+      if (frameworkItems.length === 0) {
+        frameworkItems = lines.slice(1).filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
+      }
+    } else if (lower.includes('fonctionnalités')) {
+      const lines = trimmed.split(/\n/)
+      featuresTitle = lines[0].replace(/\s*:\s*$/, '').trim()
       featuresItems = extractList(trimmed)
-      if (featuresItems.length === 0) featuresItems = rest.filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
-    } else if (!frameworkItems.length && !featuresItems.length) {
+      if (featuresItems.length === 0) {
+        featuresItems = lines.slice(1).filter((l) => l.trim()).map((l) => l.replace(/^•\s*/, '').trim())
+      }
+    } else {
       intro = intro ? `${intro}\n\n${trimmed}` : trimmed
     }
   }
 
-  if (!intro && blocks.length > 0) {
-    const first = blocks[0].trim()
-    if (!first.toLowerCase().includes('framework') && !first.toLowerCase().includes('fonctionnalités')) intro = first
-  }
   return { intro, frameworkTitle, frameworkItems, featuresTitle, featuresItems }
 }
 

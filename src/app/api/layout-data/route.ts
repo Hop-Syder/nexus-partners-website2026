@@ -14,8 +14,8 @@ const footerData = {
         socialLinks: [
             {
                 name: "LinkedIn",
-                icon: "/images/reseau/linkedin.png",
-                dark_icon: "/images/reseau/linkedin.png",
+                icon: "/images/reseau/linkedin.svg",
+                dark_icon: "/images/reseau/linkedin.svg",
                 link: "https://www.linkedin.com/company/nexus-partners-bj"
             },
             {

@@ -97,7 +97,7 @@ const Founder = () => {
                                     className="w-14 h-14 rounded-full border border-dark_black/10 dark:border-white/10 flex items-center justify-center hover:scale-110 transition-all bg-white dark:bg-white/5 overflow-hidden p-3"
                                 >
                                     <Image
-                                        src="/images/reseau/linkedin.png"
+                                        src="/images/reseau/linkedin.svg"
                                         alt="LinkedIn"
                                         width={24}
                                         height={24}
