@@ -3,7 +3,7 @@
  * @organization Nexus Partners
  * @description Page des conditions générales (Terms & Conditions)
  * @created 2026-02-14
- * @updated 2026-02-14
+ * @updated 2026-03-12
  * 🌐 ceo.nexuspartners.xyz
  * 📧 daoudaabassichristian@gmail.com
 */

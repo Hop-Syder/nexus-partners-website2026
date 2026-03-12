@@ -3,7 +3,7 @@
  * @organization Nexus Partners
  * @description Page Portfolio (Work) regroupant les réalisations de Nexus Partners.
  * @created 2026-01-07
- * @updated 2026-01-07
+ * @updated 2026-03-12
  * 🌐 ceo.nexus-partners.xyz
 */
 import { Metadata } from "next";
