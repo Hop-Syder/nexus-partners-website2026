@@ -60,10 +60,26 @@ export const metadata: Metadata = {
     creator: '@nexuspartners',
     images: ['/images/logo/logo-nexuspartners.png'],
   },
+  alternates: {
+    canonical: 'https://nexus-partners.xyz',
+    languages: {
+      'en': 'https://nexus-partners.xyz/en',
+      'fr': 'https://nexus-partners.xyz/fr',
+    },
+  },
   robots: {
     index: true,
     follow: true,
-  }
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default async function Layout({
