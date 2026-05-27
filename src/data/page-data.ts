@@ -153,7 +153,7 @@ export const NosProjetsList = [
 export const creativeMindList = [
   {
     image: '/images/team/ismael_daouda_abassi.png',
-    name: 'Ismaël Christian nDAOUDA ABASSI',
+    name: 'Ismaël Christian DAOUDA ABASSI',
     position: 'CEOS Nexus Partners',
     twitterLink: 'https://twitter.com/IsmaelNexus',
     linkedinLink: 'https://www.linkedin.com/in/'
