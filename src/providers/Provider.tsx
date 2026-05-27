@@ -6,7 +6,7 @@ import WhatsAppButton from '../app/components/shared/whatsapp-button'
 
 export default function Providers({ children }: { children: React.ReactNode }) {
     return (
-        <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
+        <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
             {children}
             <WhatsAppButton />
             <ScrollToTop />
